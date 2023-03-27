@@ -1,4 +1,11 @@
-jamal
+jamalUDIN
 dapal
 malinda
+<<<<<<< HEAD
+hana
+=======
+hana
+gege
+jinan
+>>>>>>> 6e442a5bdc140221bd3a4a2ddf210b18b85df0ba
 hana
