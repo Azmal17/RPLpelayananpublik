@@ -15,7 +15,7 @@ use App\Models\Employee;
 |
 */  
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     $jumlahdokter = Employee::count();
     $jumlahdokterpria = Employee::where('jeniskelamin','Pria')->count();
     $jumlahdokterwanita = Employee::where('jeniskelamin','Wanita')->count();
@@ -38,7 +38,7 @@ Route::get('/delete/{id}',[EmployeeController::class, 'delete'])->name('delete')
 Route::get('/exportpdf',[EmployeeController::class, 'exportpdf'])->name('exportpdf');
 
 
-Route::get('/login',[loginController::class, 'login'])->name('login');
+Route::get('/',[loginController::class, 'login'])->name('login');
 Route::post('/loginproses',[loginController::class, 'loginproses'])->name('loginproses');
 
 Route::get('/register',[loginController::class, 'register'])->name('register');
