@@ -240,7 +240,7 @@
 
           <li class="nav-item">
             <a href="/dokter" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fas fa-user-md"></i>
               <p>
                 Data Dokter
                 
