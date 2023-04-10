@@ -58,7 +58,7 @@
                         <td>{{ $row->isi_pengaduan}}</td>
                         <td>
                         <a href="/tampilDataPengaduan/{{ $row->id }}" class="btn btn-warning">Edit</a>
-                        <a href="/delete/{{ $row->id }}" class="btn btn-danger">Delete</a>
+                        <a href="/deletePengaduan/{{ $row->id }}" class="btn btn-danger">Delete</a>
                         </td>
                         <td>{{ $row->status }}</td>
                       </tr>

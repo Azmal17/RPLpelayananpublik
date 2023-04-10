@@ -18,33 +18,33 @@ class pengaduanController extends Controller
         return view('dataPengaduan', compact('data'));
     }
 
-    public function tambahData()
+    public function tambahDataPengaduan()
     {
         return view('tambahDataPengaduan');
     }
 
-    public function insertData(Request $request)
+    public function insertDataPengaduan(Request $request)
     {
         //dd($request->all());
         $data = pengaduan::create($request->all());
         return redirect()->route('dataPengaduan')->with('success', 'Data Berhasil Ditambahkan!');
     }
 
-    public function tampilData($id)
+    public function tampilDataPengaduan($id)
     {
         $data = pengaduan::find($id);
         //dd($data);
         return view('tampilDataPengaduan', compact('data'));
     }
 
-    public function updateData(Request $request, $id)
+    public function updateDataPengaduan(Request $request, $id)
     {
         $data = pengaduan::find($id);
         $data->update($request->all());
         return redirect()->route('dataPengaduan')->with('success', 'Data Berhasil Diperbarui!');
     }
 
-    public function delete($id)
+    public function deletePengaduan($id)
     {
         $data = pengaduan::find($id);
         $data->delete();

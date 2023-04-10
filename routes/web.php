@@ -63,12 +63,12 @@ Route::get('/deletedata/{id}', [AdminController::class, 'deletedata'])->name('de
 Route::get('/datapengaduan',[pengaduanController::class, 'index']) ->name('dataPengaduan');
 
 Route::get('/tambahDataPengaduan',[pengaduanController::class, 'tambahData']) ->name('tambahDataPengaduan');
-Route::post('/insertData',[pengaduanController::class, 'insertData']) ->name('insertData');
+Route::post('/insertDataPengaduan',[pengaduanController::class, 'insertData']) ->name('insertDataPengaduan');
 
 Route::get('/tampilDataPengaduan/{id}',[pengaduanController::class, 'tampilData']) ->name('tampilDataPengaduan');
-Route::post('/updateData/{id}',[pengaduanController::class, 'updateData']) ->name('updateData');
+Route::post('/updateDataPengaduan/{id}',[pengaduanController::class, 'updateData']) ->name('updateDataPengaduan');
 
-Route::get('/delete/{id}',[pengaduanController::class, 'delete']) ->name('delete');
+Route::get('/deletePengaduan/{id}',[pengaduanController::class, 'delete']) ->name('deletePengaduan');
 
 // crud Rawat Inap
 Route::resource('inaps', InapController::class);
