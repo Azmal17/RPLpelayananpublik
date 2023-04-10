@@ -6,6 +6,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\AdminController;
 use App\Models\Employee;
 use App\Http\Controllers\pengaduanController;
+use App\Http\Controllers\InapController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,3 +69,6 @@ Route::get('/tampilDataPengaduan/{id}',[pengaduanController::class, 'tampilData'
 Route::post('/updateData/{id}',[pengaduanController::class, 'updateData']) ->name('updateData');
 
 Route::get('/delete/{id}',[pengaduanController::class, 'delete']) ->name('delete');
+
+// crud Rawat Inap
+Route::resource('inaps', InapController::class);
