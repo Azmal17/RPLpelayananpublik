@@ -41,7 +41,7 @@
                         <td>{{$row->norujukan}}</td>
                         <td>{{$row->namapasien}}</td>
                         <td>
-                            <a href="/tampilkandata/{{$row->id}}" class="btn btn-secondary">Edit</a>
+                            <a href="/tampilkandatarawatjalan/{{$row->id}}" class="btn btn-secondary">Edit</a>
                             <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-norm="{{$row->norm}}">Delete</a>
                         </td>
                       </tr>
@@ -75,7 +75,7 @@
             confirmButtonText: 'Konfirmasi!'
         }).then((result) => {
         if (result.isConfirmed) {
-            window.location ="/deletedata/"+rawatjalanid+""    
+            window.location ="/deletedatarawatjalan/"+rawatjalanid+""    
             Swal.fire(
                 'Data berhasil dihapus.'
             )
