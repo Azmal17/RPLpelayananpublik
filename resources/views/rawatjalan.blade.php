@@ -53,7 +53,7 @@
           @endphp 
           @foreach ($data as $index => $row)
             <tr>
-              <th scope="row">{{$row->id}}</th>
+              <th scope="row">{{ $index + $data->firstItem() }}</th>
               <td>{{$row->norm}}</td>
               <td>{{$row->noregistrasi}}</td>
               <td>{{$row->norujukan}}</td>
