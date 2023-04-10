@@ -249,6 +249,16 @@
           </li>
 
           <li class="nav-item">
+            <a href="/dokter" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Data Rawat Jalan
+                
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="/logout" class="nav-link">
               <i class="nav-icon fas fa-power-off"></i>
               <p>
