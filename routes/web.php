@@ -45,3 +45,13 @@ Route::get('/register',[loginController::class, 'register'])->name('register');
 Route::post('/registeruser',[loginController::class, 'registeruser'])->name('registeruser');
 
 Route::get('/logout',[loginController::class, 'logout'])->name('logout');
+
+//crud rawat jalan
+Route::get('/rawatjalan', [AdminController::class, 'index'])->name('rawatjalan') ;
+Route::get('/tambahdatarawatjalan', [AdminController::class, 'tambahdatarawatjalan'])->name('tambahdatarawatjalan') ;
+Route::post('/tambahdatarawatjalan2', [AdminController::class, 'tambahdatarawatjalan2'])->name('tambahdatarawatjalan2') ;
+
+Route::get('/tampilkandata/{id}', [AdminController::class, 'tampilkandata'])->name('tampilkandata') ;
+Route::post('/updatedata/{id}', [AdminController::class, 'updatedata'])->name('updatedata') ;
+
+Route::get('/deletedata/{id}', [AdminController::class, 'deletedata'])->name('deletedata') ;
