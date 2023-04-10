@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Models\Employee;
 use App\Http\Controllers\pengaduanController;
 use App\Http\Controllers\InapController;
+use App\Http\Controllers\PatientController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -72,3 +73,6 @@ Route::get('/deletePengaduan/{id}',[pengaduanController::class, 'deletePengaduan
 
 // crud Rawat Inap
 Route::resource('inaps', InapController::class);
+
+// crud Pendaftaran
+Route::resource('patients', PatientController::class);
