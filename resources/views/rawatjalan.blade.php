@@ -48,19 +48,22 @@
                 </tr>
               </thead>
               <tbody>
-              @foreach ($data as $row)
-                <tr>
-                  <th scope="row">{{$row->id}}</th>
-                  <td>{{$row->norm}}</td>
-                  <td>{{$row->noregistrasi}}</td>
-                  <td>{{$row->norujukan}}</td>
-                  <td>{{$row->namapasien}}</td>
-                  <td>
-                      <a href="/tampilkandatarawatjalan/{{$row->id}}" class="btn btn-secondary">Edit</a>
-                      <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-norm="{{$row->norm}}">Delete</a>
-                  </td>
-                </tr>
-              @endforeach
+                @php
+                  $no = 1;
+                @endphp 
+                @foreach ($data as $index => $row)
+                  <tr>
+                    <th scope="row">{{$row->id}}</th>
+                    <td>{{$row->norm}}</td>
+                    <td>{{$row->noregistrasi}}</td>
+                    <td>{{$row->norujukan}}</td>
+                    <td>{{$row->namapasien}}</td>
+                    <td>
+                        <a href="/tampilkandatarawatjalan/{{$row->id}}" class="btn btn-secondary">Edit</a>
+                        <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-norm="{{$row->norm}}">Delete</a>
+                    </td>
+                  </tr>
+                @endforeach
               </tbody>
             </table>
       </div>
