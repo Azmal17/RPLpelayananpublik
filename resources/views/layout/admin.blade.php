@@ -249,7 +249,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/dokter" class="nav-link">
+            <a href="/rawatjalan" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Data Rawat Jalan

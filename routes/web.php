@@ -50,14 +50,14 @@ Route::post('/registeruser',[loginController::class, 'registeruser'])->name('reg
 Route::get('/logout',[loginController::class, 'logout'])->name('logout');
 
 //crud rawat jalan
-Route::get('/rawatjalan', [AdminController::class, 'index'])->name('rawatjalan') ;
-Route::get('/tambahdatarawatjalan', [AdminController::class, 'tambahdatarawatjalan'])->name('tambahdatarawatjalan') ;
-Route::post('/tambahdatarawatjalan2', [AdminController::class, 'tambahdatarawatjalan2'])->name('tambahdatarawatjalan2') ;
+Route::get('/rawatjalan', [AdminController::class, 'index'])->name('rawatjalan')->middleware('auth') ;
+Route::get('/tambahdatarawatjalan', [AdminController::class, 'tambahdatarawatjalan'])->name('tambahdatarawatjalan')->middleware('auth') ;
+Route::post('/tambahdatarawatjalan2', [AdminController::class, 'tambahdatarawatjalan2'])->name('tambahdatarawatjalan2')->middleware('auth') ;
 
-Route::get('/tampilkandatarawatjalan/{id}', [AdminController::class, 'tampilkandatarawatjalan'])->name('tampilkandatarawatjalan') ;
-Route::post('/updatedatarawatjalan/{id}', [AdminController::class, 'updatedatarawatjalan'])->name('updatedatarawatjalan') ;
+Route::get('/tampilkandatarawatjalan/{id}', [AdminController::class, 'tampilkandatarawatjalan'])->name('tampilkandatarawatjalan')->middleware('auth') ;
+Route::post('/updatedatarawatjalan/{id}', [AdminController::class, 'updatedatarawatjalan'])->name('updatedatarawatjalan')->middleware('auth') ;
 
-Route::get('/deletedatarawatjalan/{id}', [AdminController::class, 'deletedatarawatjalan'])->name('deletedatarawatjalan') ;
+Route::get('/deletedatarawatjalan/{id}', [AdminController::class, 'deletedatarawatjalan'])->name('deletedatarawatjalan')->middleware('auth') ;
 
 //crud pengaduan
 Route::get('/datapengaduan',[pengaduanController::class, 'index']) ->name('dataPengaduan');
