@@ -54,10 +54,10 @@ Route::get('/rawatjalan', [AdminController::class, 'index'])->name('rawatjalan')
 Route::get('/tambahdatarawatjalan', [AdminController::class, 'tambahdatarawatjalan'])->name('tambahdatarawatjalan') ;
 Route::post('/tambahdatarawatjalan2', [AdminController::class, 'tambahdatarawatjalan2'])->name('tambahdatarawatjalan2') ;
 
-Route::get('/tampilkandata/{id}', [AdminController::class, 'tampilkandata'])->name('tampilkandata') ;
-Route::post('/updatedata/{id}', [AdminController::class, 'updatedata'])->name('updatedata') ;
+Route::get('/tampilkandatarawatjalan/{id}', [AdminController::class, 'tampilkandatarawatjalan'])->name('tampilkandatarawatjalan') ;
+Route::post('/updatedatarawatjalan/{id}', [AdminController::class, 'updatedatarawatjalan'])->name('updatedatarawatjalan') ;
 
-Route::get('/deletedata/{id}', [AdminController::class, 'deletedata'])->name('deletedata') ;
+Route::get('/deletedatarawatjalan/{id}', [AdminController::class, 'deletedatarawatjalan'])->name('deletedatarawatjalan') ;
 
 //crud pengaduan
 Route::get('/datapengaduan',[pengaduanController::class, 'index']) ->name('dataPengaduan');
