@@ -23,7 +23,7 @@ Route::get('/', function () {
     $jumlahdokterpria = Employee::where('jeniskelamin','Pria')->count();
     $jumlahdokterwanita = Employee::where('jeniskelamin','Wanita')->count();
     return view('welcome',compact('jumlahdokter','jumlahdokterpria','jumlahdokterwanita'));
-});
+})->middleware('auth');
 
 
 
@@ -60,7 +60,7 @@ Route::post('/updatedata/{id}', [AdminController::class, 'updatedata'])->name('u
 Route::get('/deletedata/{id}', [AdminController::class, 'deletedata'])->name('deletedata') ;
 
 //crud pengaduan
-Route::get('/',[pengaduanController::class, 'index']) ->name('dataPengaduan');
+Route::get('/datapengaduan',[pengaduanController::class, 'index']) ->name('dataPengaduan');
 
 Route::get('/tambahDataPengaduan',[pengaduanController::class, 'tambahData']) ->name('tambahDataPengaduan');
 Route::post('/insertData',[pengaduanController::class, 'insertData']) ->name('insertData');
