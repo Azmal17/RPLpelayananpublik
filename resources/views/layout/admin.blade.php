@@ -250,7 +250,7 @@
 
           <li class="nav-item">
             <a href="/rawatjalan" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fa-solid fa-stethoscope"></i>
               <p>
                 Data Rawat Jalan
                 
