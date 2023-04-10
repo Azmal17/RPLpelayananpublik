@@ -5,6 +5,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\AdminController;
 use App\Models\Employee;
+use App\Http\Controllers\pengaduanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,3 +57,14 @@ Route::get('/tampilkandata/{id}', [AdminController::class, 'tampilkandata'])->na
 Route::post('/updatedata/{id}', [AdminController::class, 'updatedata'])->name('updatedata') ;
 
 Route::get('/deletedata/{id}', [AdminController::class, 'deletedata'])->name('deletedata') ;
+
+//crud pengaduan
+Route::get('/',[pengaduanController::class, 'index']) ->name('dataPengaduan');
+
+Route::get('/tambahDataPengaduan',[pengaduanController::class, 'tambahData']) ->name('tambahDataPengaduan');
+Route::post('/insertData',[pengaduanController::class, 'insertData']) ->name('insertData');
+
+Route::get('/tampilDataPengaduan/{id}',[pengaduanController::class, 'tampilData']) ->name('tampilDataPengaduan');
+Route::post('/updateData/{id}',[pengaduanController::class, 'updateData']) ->name('updateData');
+
+Route::get('/delete/{id}',[pengaduanController::class, 'delete']) ->name('delete');
