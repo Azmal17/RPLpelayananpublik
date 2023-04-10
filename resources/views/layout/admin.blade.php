@@ -907,6 +907,7 @@
 <script src="{{ asset('template/plugins/raphael/raphael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
+<script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
 <!-- ChartJS -->
 <script src="{{ asset('template/plugins/chart.js/Chart.min.js') }}"></script>
 
