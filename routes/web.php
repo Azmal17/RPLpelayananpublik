@@ -72,7 +72,7 @@ Route::post('/updateDataPengaduan/{id}',[pengaduanController::class, 'updateData
 Route::get('/deletePengaduan/{id}',[pengaduanController::class, 'deletePengaduan']) ->name('deletePengaduan');
 
 // crud Rawat Inap
-Route::resource('inaps', InapController::class);
+Route::resource('inaps', InapController::class)->middleware('auth');
 
 // crud Pendaftaran
 Route::resource('patients', PatientController::class);
