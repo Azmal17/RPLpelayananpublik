@@ -8,7 +8,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ asset('template/plugins/fontawesome-free/css/fontawesome.min.css') }}">
+  <link  href="{{ asset('fontawesome/css/all.min.css') }}" rel="stylesheet" type="text/css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{ asset('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Theme style -->
@@ -938,6 +938,7 @@
 <script src="{{ asset('template/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
 <script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+<script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-replace-svg="nest"></script>
 <!-- ChartJS -->
 <script src="{{ asset('template/plugins/chart.js/Chart.min.js') }}"></script>
 
