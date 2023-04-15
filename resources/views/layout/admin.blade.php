@@ -937,7 +937,6 @@
 <script src="{{ asset('template/plugins/raphael/raphael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
-<script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
 <script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-replace-svg="nest"></script>
 <!-- ChartJS -->
 <script src="{{ asset('template/plugins/chart.js/Chart.min.js') }}"></script>
