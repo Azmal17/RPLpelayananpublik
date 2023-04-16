@@ -250,7 +250,7 @@
 
           <li class="nav-item">
             <a href="/patients" class="nav-link">
-              <i class="nav-icon fas fa-users-medical"></i>
+              <i class="nav-icon fas fa-hospital-user"></i>
               <p>
                 Data Pasien
                 
