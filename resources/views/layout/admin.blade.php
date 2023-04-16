@@ -240,7 +240,7 @@
 
           <li class="nav-item">
             <a href="/dokter" class="nav-link">
-              <i class="fas fa-user-md"></i>
+              <i class="nav-icon fas fa-user-md"></i>
               <p>
                 Data Dokter
                 
@@ -250,7 +250,7 @@
 
           <li class="nav-item">
             <a href="/patients" class="nav-link">
-              <i class="fas fa-users-medical"></i>
+              <i class="nav-icon fas fa-users-medical"></i>
               <p>
                 Data Pasien
                 
@@ -260,7 +260,7 @@
 
           <li class="nav-item">
             <a href="/rawatjalan" class="nav-link">
-              <i class="fas fa-wheelchair"></i>
+              <i class="nav-icon fas fa-wheelchair"></i>
               <p>
                 Data Rawat Jalan
                 
@@ -270,7 +270,7 @@
 
           <li class="nav-item">
             <a href="/inaps" class="nav-link">
-              <i class="fas fa-bed-pulse"></i>
+              <i class="nav-icon fas fa-bed-pulse"></i>
               <p>
                 Data Rawat Inap
                 
@@ -280,7 +280,7 @@
 
           <li class="nav-item">
             <a href="/datapengaduan" class="nav-link">
-              <i class="fas fa-comments"></i>
+              <i class="nav-icon fas fa-comments"></i>
               <p>
                 Data Pengaduan
                 
