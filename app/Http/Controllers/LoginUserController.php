@@ -33,7 +33,8 @@ class LoginUserController extends Controller
         $patients = Patient::latest()->paginate(5);
         return view('loginuser.prj',[
             "title" => "Pendaftaran"
-        ], compact('patients'));
+        ], compact('patients'))
+                ->with('i', (request()->input('page', 1) - 1) * 5);;
     }
     public function pengaduan()
     {
