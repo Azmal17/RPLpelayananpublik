@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    display: flex;
+    background-color: #537FE7;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+}
+.logo{
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "'Courier New', Courier, monospace";
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 5px 12px 5px 12px;
+}
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    display: block;
+}
+nav ul li a:active {
+    background-color: white;
+}
+
+
+.dropdown {
+    font-weight: bold;
+    font-family: "'Courier New', Courier, monospace";
+    font-size: 20px;
+    color: #fefefe;
+    background-color: #537FE7;
+    border: #537FE7;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 12px 5px 12px;
+}
+.dropbtn {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "'Courier New', Courier, monospace";
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.dropbtn:hover {
+    display: block;
+    color: black;
+}
+
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 0%;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}

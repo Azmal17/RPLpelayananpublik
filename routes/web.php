@@ -76,3 +76,13 @@ Route::resource('inaps', InapController::class)->middleware('auth');
 
 // crud Pendaftaran
 Route::resource('patients', PatientController::class);
+
+// user route
+Route::get('/loginuser',[LoginUserController::class, 'index']);
+Route::post('/loginuserproses',[LoginUserController::class, 'loginuserproses']);
+Route::get('/registerpasien',[RegisterController::class, 'index']);
+Route::post('/registerpasienproses',[RegisterController::class, 'registerpasienproses']);
+Route::get('/dashboarduser',[LoginUserController::class, 'dashboard']);
+Route::get('/pengaduan',[LoginUserController::class, 'pengaduan']);
+Route::get('/pri',[LoginUserController::class, 'pri']);
+Route::get('/prj',[LoginUserController::class, 'prj']);
