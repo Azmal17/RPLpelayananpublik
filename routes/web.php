@@ -26,19 +26,19 @@ Route::get('/', function () {
     $jumlahdokterpria = Employee::where('jeniskelamin','Pria')->count();
     $jumlahdokterwanita = Employee::where('jeniskelamin','Wanita')->count();
     return view('welcome',compact('jumlahdokter','jumlahdokterpria','jumlahdokterwanita'));
-})->middleware('auth');
+});
 
 
 
-Route::get('/dokter',[EmployeeController::class, 'index'])->name('dokter')->middleware('auth');
+Route::get('/dokter',[EmployeeController::class, 'index'])->name('dokter');
 
-Route::get('/tambahdokter',[EmployeeController::class, 'tambahdokter'])->name('tambahdokter')->middleware('auth');
-Route::post('/insertdata',[EmployeeController::class, 'insertdata'])->name('insertdata')->middleware('auth');
+Route::get('/tambahdokter',[EmployeeController::class, 'tambahdokter'])->name('tambahdokter');
+Route::post('/insertdata',[EmployeeController::class, 'insertdata'])->name('insertdata');
 
-Route::get('/tampilkandata/{id}',[EmployeeController::class, 'tampilkandata'])->name('tampilkandata')->middleware('auth');
-Route::post('/updatedata/{id}',[EmployeeController::class, 'updatedata'])->name('updatedata')->middleware('auth');
+Route::get('/tampilkandata/{id}',[EmployeeController::class, 'tampilkandata'])->name('tampilkandata');
+Route::post('/updatedata/{id}',[EmployeeController::class, 'updatedata'])->name('updatedata');
 
-Route::get('/delete/{id}',[EmployeeController::class, 'delete'])->name('delete')->middleware('auth');
+Route::get('/delete/{id}',[EmployeeController::class, 'delete'])->name('delete');
 
 //export PDF
 Route::get('/exportpdf',[EmployeeController::class, 'exportpdf'])->name('exportpdf');
