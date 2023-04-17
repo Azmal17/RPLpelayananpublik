@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Patient;
-use App\Models\pengaduan;
+use App\Http\Controllers\pengaduanController;
+use App\Http\Controllers\PatientController;
 
 class LoginUserController extends Controller
 {
