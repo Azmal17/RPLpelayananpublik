@@ -8,6 +8,8 @@ use App\Models\Employee;
 use App\Http\Controllers\pengaduanController;
 use App\Http\Controllers\InapController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\LoginUserController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
