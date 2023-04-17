@@ -32,13 +32,13 @@ class LoginUserController extends Controller
     {
         return view('loginuser.prj',[
             "title" => "Pendaftaran"
-        ]);
+        ], compact('patients'));
     }
     public function pengaduan()
     {
         return view('loginuser.pengaduan',[
             "title" => "Pengaduan"
-        ]);
+        ], compact('data'));
     }
 
     // public function loginuserproses(Request $request){
