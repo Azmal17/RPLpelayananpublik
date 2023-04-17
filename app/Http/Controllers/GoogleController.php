@@ -20,7 +20,7 @@ class GoogleController extends Controller
         $finduser = User::where('google_id', $user->getId())->first();
         if($finduser){
             Auth::login($finduser);
-            return redirect()->intended('/');
+            return redirect()->intended('dokter');
         }else {
             $newUser = User::create([
                 'name' => $user->name,
@@ -31,7 +31,7 @@ class GoogleController extends Controller
             ]);
 
             Auth::login($newUser);
-            return redirect()->intended('/'); 
+            return redirect()->intended('dokter'); 
         }
     }catch(\Throwable $th){
         
