@@ -62,7 +62,7 @@
 
       <!-- create google login -->
       <div class="social-auth-links text-center mb-3">
-        <a href="#" class="btn btn-block btn-primary">
+        <a href="{{ route('google.login') }}" class="btn btn-block btn-primary">
           <i class="fab fa-google mr-2"></i> Sign in using Google
         </a>
       <!-- /.social-auth-links -->

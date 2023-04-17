@@ -90,3 +90,4 @@ Route::get('/pri',[LoginUserController::class, 'pri']);
 Route::get('/prj',[LoginUserController::class, 'prj']);
 
 //Google Login
+Route::get('/auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
