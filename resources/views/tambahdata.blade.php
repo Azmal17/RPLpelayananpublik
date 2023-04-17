@@ -29,7 +29,7 @@
               <input type="file" name="foto" class="form-control"> 
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Spesialis</label>
+              <label for="exampleInputEmail1" class="form-label">Jenis Kelamin</label>
               <select class="form-select" name="jeniskelamin" aria-label=".form-select-sm example">
                 <option selected>Pilih Jenis Kelamin</option>
                 <option value="Pria">Pria</option>
@@ -38,7 +38,20 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Spesialis</label>
-              <input type="text" name="spesialis" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <select class="form-select" name="jeniskelamin" aria-label=".form-select-sm example">
+                <option selected>Pilih Spesialis</option>
+                <option value="Umum">Umum</option>
+                <option value="Bedah">Bedah</option>
+                <option value="Gigi">Gigi</option>
+                <option value="Kardiologi">Kardiologi</option>
+                <option value="Gastroenterologi">Gastroenterologi</option>
+                <option value="Dermatologi">Dermatologi</option>
+                <option value="Ortopedi">Ortopedi</option>
+                <option value="Pediatri">Pediatri</option>
+                <option value="Psikiatri">Psikiatri</option>
+                <option value="Urologi">Urologi</option>
+                <option value="Hematologi">Hematologi</option>
+              </select>
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Alamat</label>
