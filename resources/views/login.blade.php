@@ -42,6 +42,8 @@
             </div>
           </div>
         </div>
+        <
+  
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
@@ -59,7 +61,11 @@
         </div>
       </form>
 
-      
+      <!-- create google login -->
+      <div class="social-auth-links text-center mb-3">
+        <a href="{{ route('google.login') }}" class="btn btn-block btn-primary">
+          <i class="fab fa-google mr-2"></i> Sign in using Google
+        </a>
       <!-- /.social-auth-links -->
 
       
@@ -79,5 +85,6 @@
 <script src="{{ asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('template/dist/js/adminlte.min.js') }}"></script>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>
