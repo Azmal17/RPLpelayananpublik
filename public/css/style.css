@@ -1,0 +1,14 @@
+.logo{
+    background-color: rgb(255, 252, 252) ;
+    border-radius: 50% ;
+}
+
+.form-registration {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-registration input {
+    border-radius: 0;
+    margin-bottom: -1px;
+}

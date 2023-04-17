@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pelayanan Publik ROSITA</title>
+  <title>Pelayanan Publik ROSATI</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ asset('template/plugins/fontawesome-free/css/all.min.css') }}">
+  <link  href="{{ asset('fontawesome/css/all.min.css') }}" rel="stylesheet" type="text/css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{ asset('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Theme style -->
@@ -240,7 +240,7 @@
 
           <li class="nav-item">
             <a href="/dokter" class="nav-link">
-              <i class="fas fa-user-md"></i>
+              <i class="nav-icon fas fa-user-md"></i>
               <p>
                 Data Dokter
                 
@@ -249,10 +249,40 @@
           </li>
 
           <li class="nav-item">
+            <a href="/patients" class="nav-link">
+              <i class="nav-icon fas fa-hospital-user"></i>
+              <p>
+                Data Pasien
+                
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
             <a href="/rawatjalan" class="nav-link">
-              <i class="fa-solid fa-stethoscope"></i>
+              <i class="nav-icon fas fa-wheelchair"></i>
               <p>
                 Data Rawat Jalan
+                
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/inaps" class="nav-link">
+              <i class="nav-icon fas fa-bed-pulse"></i>
+              <p>
+                Data Rawat Inap
+                
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/datapengaduan" class="nav-link">
+              <i class="nav-icon fas fa-comments"></i>
+              <p>
+                Data Pengaduan
                 
               </p>
             </a>
@@ -907,7 +937,7 @@
 <script src="{{ asset('template/plugins/raphael/raphael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
 <script src="{{ asset('template/plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
-<script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+<script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-replace-svg="nest"></script>
 <!-- ChartJS -->
 <script src="{{ asset('template/plugins/chart.js/Chart.min.js') }}"></script>
 

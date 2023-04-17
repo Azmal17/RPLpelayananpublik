@@ -8,6 +8,8 @@ use App\Models\Employee;
 use App\Http\Controllers\pengaduanController;
 use App\Http\Controllers\InapController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\LoginUserController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -72,7 +74,20 @@ Route::post('/updateDataPengaduan/{id}',[pengaduanController::class, 'updateData
 Route::get('/deletePengaduan/{id}',[pengaduanController::class, 'deletePengaduan']) ->name('deletePengaduan');
 
 // crud Rawat Inap
-Route::resource('inaps', InapController::class);
+Route::resource('inaps', InapController::class)->middleware('auth');
 
 // crud Pendaftaran
 Route::resource('patients', PatientController::class);
+
+// user route
+Route::get('/loginuser',[LoginUserController::class, 'index']);
+Route::post('/loginuserproses',[LoginUserController::class, 'loginuserproses']);
+Route::get('/registerpasien',[RegisterController::class, 'index']);
+Route::post('/registerpasienproses',[RegisterController::class, 'registerpasienproses']);
+Route::get('/dashboarduser',[LoginUserController::class, 'dashboard']);
+Route::get('/pengaduan',[LoginUserController::class, 'pengaduan']);
+Route::get('/pri',[LoginUserController::class, 'pri']);
+Route::get('/prj',[LoginUserController::class, 'prj']);
+
+//Google Login
+Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
