@@ -26,7 +26,7 @@ Route::get('/', function () {
     $jumlahdokterpria = Employee::where('jeniskelamin','Pria')->count();
     $jumlahdokterwanita = Employee::where('jeniskelamin','Wanita')->count();
     return view('welcome',compact('jumlahdokter','jumlahdokterpria','jumlahdokterwanita'));
-});
+})->middleware('auth');
 
 
 
