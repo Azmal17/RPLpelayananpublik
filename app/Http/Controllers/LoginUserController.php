@@ -30,12 +30,14 @@ class LoginUserController extends Controller
 
     public function prj()
     {
+        $patients = Patient::latest()->paginate(5);
         return view('loginuser.prj',[
             "title" => "Pendaftaran"
         ], compact('patients'));
     }
     public function pengaduan()
     {
+        $data = pengaduan::all();
         return view('loginuser.pengaduan',[
             "title" => "Pengaduan"
         ], compact('data'));
