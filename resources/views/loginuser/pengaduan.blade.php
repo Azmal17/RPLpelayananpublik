@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('container')
+@section('content')
 <h1 class="text-center mb-5">Data Pengaduan</h1>
 <div class="container">
     <div class="row">
