@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('content')
+@section('container')
 <table class="table table-bordered mt-5">
     <thead>
       <tr>
