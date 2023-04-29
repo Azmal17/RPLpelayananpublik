@@ -43,6 +43,12 @@ class LoginUserController extends Controller
             "title" => "Pengaduan"
         ], compact('data'));
     }
+    public function faq()
+    {
+        return view('loginuser.faq',[
+            "title" => "FAQ"
+        ], compact('data'));
+    }
 
     // public function loginuserproses(Request $request){
     //     if(Auth::attempt($request->only('email','password'))){

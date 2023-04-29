@@ -38,9 +38,6 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontak Kami</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#">FAQ</a>
                 </li>
                 {{-- <li class="nav-item">
