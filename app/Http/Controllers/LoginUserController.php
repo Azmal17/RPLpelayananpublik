@@ -47,7 +47,7 @@ class LoginUserController extends Controller
     {
         return view('loginuser.faq',[
             "title" => "FAQ"
-        ], compact('data'));
+        ]);
     }
 
     // public function loginuserproses(Request $request){
