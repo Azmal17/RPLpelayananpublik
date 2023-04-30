@@ -24,7 +24,7 @@
                     <a class="nav-link" aria-current="page" href="#">Alur Layanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{($title === "Pengaduan") ? 'active' : '' }}" href="/pengaduan">Pengaduan</a>
+                    <a class="nav-link {{($title === "Pengaduan") ? 'active' : '' }}" href="/dataPengaduan">Pengaduan</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle {{($title === "Pendaftaran") ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,7 +38,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link {{($title === "faq") ? 'active' : '' }}" href="/faq">FAQ</a>
                 </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
