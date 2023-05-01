@@ -66,7 +66,7 @@
         2. Kartu Identitas dan Kartu Kepesertaan Asuransi(BPJS, BPJS Ketenagakerjaan, dan Asuransi lainnya)<br/>
         3. Obat-obatan rutin yang Anda konsumsi(termasuk obat herbal, vitamin, suplemen)<br/>
         4. Pakaian:pakaian tidur/piyama, gaun tidur, sandal bersih, pakaian harian, dan pakaian dalam<br/>
-        5. Alat bantu– kacamata, lensa kontak, tongkat (pastikan Anda memberi label nama pada setiap alat bantu yang Anda bawa)<br/>
+        5. Alat bantu– kacamata, lensa kontak, tongkat (pastikan Anda memberi label nama pada setiap alat bantu yang Anda bawa)
         </p>
       </div>
     </div>
@@ -94,7 +94,7 @@
         <p>
         Sesuai dengan:<br/>
         1. Peraturan Daerah Kota Depok Nomor 2 Tahun 2020 tentang Perubahan Atas Peraturan Daerah Kota Depok Nomor 3 Tahun 2014 tentang Kawasan Tanpa Rokok<br/>
-        2. Keputusan Direktur Utama Rumah Sakit Rombel Satu TI Nomor 71/SK/DIRUT/ROSATI/2019 tentang Revisi Penetapan Kawasan Tanpa Rokok di Rumah Sakit Rombel Satu TI<br/>
+        2. Keputusan Direktur Utama Rumah Sakit Rombel Satu TI Nomor 71/SK/DIRUT/ROSATI/2019 tentang Revisi Penetapan Kawasan Tanpa Rokok di Rumah Sakit Rombel Satu TI
         <p>RS ROSATI merupakan Kawasan Tanpa Rokok (KTR). Dengan demikian, Anda dilarang merokok di seluruh wilayah RS ROSATI tanpa terkecuali. Larangan ini juga berlaku hingga radius 300 meter dihitung mulai dari pagar/batas terluar wilayah RS ROSATI. Selain itu, penggunaan e-cigarrettes dan kegiatan penambahan daya e-cigarrettes juga dilarang di seluruh wilayah RS ROSATI.</p>
         </p>
       </div>
@@ -149,7 +149,7 @@
         <p>
         Sejak Desember 2020, RS ROSATI telah bekerja sama dengan BPJS Kesehatan dan dapat melayani pasien JKN yang memerlukan pelayanan kesehatan. Pasien yang memilih prosedur pembayaran dengan menggunakan kepesertaan BPJS Kesehatan wajib mengikuti ketentuan administratif yang berlaku seperti:<br/>
         1. Memiliki kepesertaan BPJS Kesehatan yang aktif<br/>
-        2. Mengikuti prosedur rujukan berjenjang dari fasilitas kesehatan sebelumnya<br/>
+        2. Mengikuti prosedur rujukan berjenjang dari fasilitas kesehatan sebelumnya
         <p>Silakan menghubungi staf admisi IGD, rawat jalan, atau rawat inap RS ROSATI untuk mengetahui lebih lanjut mengenai syarat dan prosedur pelayanan bagi peserta BPJS Kesehatan.</p>
         </p>
       </div>
