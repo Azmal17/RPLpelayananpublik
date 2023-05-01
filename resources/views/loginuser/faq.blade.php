@@ -15,8 +15,8 @@
         <p>1. Berkonsultasi dengan dokter spesialis di Poliklinik</p>
             <p>Hubungi Kami: 021-123123123</p>
             <p>Customer Service RS ROSATI</p>
-        <p>2. Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)<p>
-        <p>3. Berkonsultasi dengan dokter pribadi Anda<p>
+        <p>2. Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)</p>
+        <p>3. Berkonsultasi dengan dokter pribadi Anda</p>
       </div>
     </div>
     <div class="faq">
