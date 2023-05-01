@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<link rel="stylesheet" href="css\stylefaq.css">
+<link rel="stylesheet" href="{{asset('css\stylefaq.css')}}">
     <h2 class="title">FAQ RS ROSATI</h2>
     <div class="faq">
       <div class="quesstion">
@@ -236,5 +236,5 @@
         </p>
       </div>
     </div>
-    <script src="js\faq.js"></script>
+    <script src="{{asset('js/faq.js')}}"></script>
 @endsection
