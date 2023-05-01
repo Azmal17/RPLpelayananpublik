@@ -58,6 +58,12 @@ class LoginUserController extends Controller
             "title" => "Alur Pelayanan"
         ]);
     }
+    public function pendaftaranrawatjalan()
+    {
+        return view('loginuser.pendaftaranrawatjalan',[
+            "title" => "> Pendaftaran"
+        ]);
+    }
 
     // public function loginuserproses(Request $request){
     //     if(Auth::attempt($request->only('email','password'))){
