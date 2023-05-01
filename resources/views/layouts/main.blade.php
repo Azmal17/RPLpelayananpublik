@@ -10,10 +10,12 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <div class="logo">
-                    <img src="{{asset('img/logo1.png')}}" alt="logo_rosati" width="60px" height="50px">
+                    <a href="/dashboarduser">
+                        <img src="{{asset('img/logo1.png')}}" alt="logo_rosati" width="60px" height="50px">
+                    </a>
                 </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,7 +33,7 @@
                     Pendaftaran
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/prj">Rawat Jalan</a></li>
+                    <li><a class="dropdown-item" href="/pendaftaranrawatjalan">Rawat Jalan</a></li>
                     <li><a class="dropdown-item" href="/pri">Rawat Inap</a></li>
                     {{-- <li class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
