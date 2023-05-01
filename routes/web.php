@@ -91,6 +91,8 @@ Route::get('/pri',[LoginUserController::class, 'pri']);
 Route::get('/prj',[LoginUserController::class, 'prj']);
 Route::get('/alur',[LoginUserController::class, 'alur']);
 Route::get('/pendaftaranrawatjalan',[LoginUserController::class, 'pendaftaranrawatjalan'])->name ('pendaftaranrawatjalan');
+Route::get('/pasien', [LoginUserController::class, 'create']);
+Route::post('/pasienstore', [LoginUserController::class, 'pasienstore'])->name('pasienstore');
 
 //Google Login
 Route::get('/auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');

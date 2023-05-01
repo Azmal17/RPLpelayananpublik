@@ -80,7 +80,7 @@ class LoginUserController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function pasienstore(Request $request): RedirectResponse
     {
         $request->validate([
             'no_rm' => 'required',
