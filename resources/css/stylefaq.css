@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Quicksand", sans-serif;
-    background: #fff;
-    color: #111;
-}
-
 section {
     min-height: 100vh;
     width: 80%;
@@ -19,6 +13,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Quicksand", sans-serif;
+    background: #fff;
+    color: #111;
 }
 
 .title {
