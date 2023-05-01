@@ -19,8 +19,9 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 2rem 0rem;
+    text-align: center;
 }
 
 .faq {
@@ -37,7 +38,7 @@ section {
 }
 
 .quesstion h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .answer {
@@ -49,7 +50,7 @@ section {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .faq.active .answer {

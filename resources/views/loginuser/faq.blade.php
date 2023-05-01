@@ -11,13 +11,12 @@
         </svg>
       </div>
       <div class="answer">
-        <p>
-        Bila Anda atau keluarga mengalami kondisi gawat darurat, segera cari pertolongan ke IGD RS terdekat atau IGD RS ROSATI. Untuk informasi kegawatdaruratan, Anda juga dapat menghubungi IGD RS ROSATI di nomor 021 – 012012012 Untuk kondisi bukan gawat darurat (misalnya pegal-pegal, nyeri tenggorokan, dan infeksi saluran kemih), Anda dapat mempertimbangkan pilihan layanan lainnya seperti:
-        1. Berkonsultasi dengan dokter spesialis di Poliklinik
-            Hubungi Kami: 021-123123123
-            Customer Service RS ROSATI
-        2. Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)
-        3. Berkonsultasi dengan dokter pribadi Anda
+        <p>Bila Anda atau keluarga mengalami kondisi gawat darurat, segera cari pertolongan ke IGD RS terdekat atau IGD RS ROSATI. Untuk informasi kegawatdaruratan, Anda juga dapat menghubungi IGD RS ROSATI di nomor 021 – 012012012 Untuk kondisi bukan gawat darurat (misalnya pegal-pegal, nyeri tenggorokan, dan infeksi saluran kemih), Anda dapat mempertimbangkan pilihan layanan lainnya seperti:<br/>
+            1. Berkonsultasi dengan dokter spesialis di Poliklinik <br/>
+                Hubungi Kami: 021-123123123<br/>
+                Customer Service RS ROSATI<br/>
+            2. Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)<br/>
+            3. Berkonsultasi dengan dokter pribadi Anda<br/>
         </p>
       </div>
     </div>
@@ -30,10 +29,10 @@
       </div>
       <div class="answer">
         <p>
-        Anda dapat segera menuju area admisi IGD untuk memulai proses pendaftaran rawat inap. Admisi IGD terletak di samping meja triase IGD. Bila Anda mengalami kesulitan untuk menemukan area admisi IGD, silakan bertanya kepada staf customer care kami di lobi utama Gedung Rumah Sakit Lantai 1. Pelayanan petugas customer care kami tersedia pada:
-        Hari Senin-Jumat – 08.00-18.00 WIB
-        Hari Sabtu – 08.00-14.00 WIB
-        Tanyakan kepada staf admisi kami mengenai rencana rawat inap Anda agar proses pendaftaran rawat inap dapat dilakukan. Setelah staf admisi memastikan proses pendaftaran rawat inap selesai, Anda akan diarahkan untuk melakukan perpindahan menuju ke ruang rawat tujuan Anda.
+        Anda dapat segera menuju area admisi IGD untuk memulai proses pendaftaran rawat inap. Admisi IGD terletak di samping meja triase IGD. Bila Anda mengalami kesulitan untuk menemukan area admisi IGD, silakan bertanya kepada staf customer care kami di lobi utama Gedung Rumah Sakit Lantai 1. Pelayanan petugas customer care kami tersedia pada:<br/>
+        Hari Senin-Jumat – 08.00-18.00 WIB<br/>
+        Hari Sabtu – 08.00-14.00 WIB<br/>
+        Tanyakan kepada staf admisi kami mengenai rencana rawat inap Anda agar proses pendaftaran rawat inap dapat dilakukan. Setelah staf admisi memastikan proses pendaftaran rawat inap selesai, Anda akan diarahkan untuk melakukan perpindahan menuju ke ruang rawat tujuan Anda.<br/>
         </p>
       </div>
     </div>
@@ -46,11 +45,11 @@
       </div>
       <div class="answer">
         <p>
-        Kami memahami bahwa proses rawat inap dapat menimbulkan kecemasan bagi sebagian orang. RS ROSATI senantiasa berkomitmen untuk memberikan pengalaman perawatan yang terbaik bagi Anda dan keluarga. Sebelum memulai proses rawat inap, terdapat beberapa proses yang perlu Anda jalani seperti:
-        1. Membuat janji temu dan konsultasi dengan dokter spesialis di poliklinik
-        2. Mendapatkan arahan dari dokter untuk rawat inap dan menjalani tindakan atau prosedur tertentu
-        3. Melakukan booking ruangan rawat inap sesuai kebutuhan Anda ke bagian admisi IGD atau rawat jalan
-        4. Melakukan pemeriksaan swab antigen atau PCR COVID-19 sesaat sebelum masuk rawat inap
+        Kami memahami bahwa proses rawat inap dapat menimbulkan kecemasan bagi sebagian orang. RS ROSATI senantiasa berkomitmen untuk memberikan pengalaman perawatan yang terbaik bagi Anda dan keluarga. Sebelum memulai proses rawat inap, terdapat beberapa proses yang perlu Anda jalani seperti:<br/>
+        1. Membuat janji temu dan konsultasi dengan dokter spesialis di poliklinik<br/>
+        2. Mendapatkan arahan dari dokter untuk rawat inap dan menjalani tindakan atau prosedur tertentu<br/>
+        3. Melakukan booking ruangan rawat inap sesuai kebutuhan Anda ke bagian admisi IGD atau rawat jalan<br/>
+        4. Melakukan pemeriksaan swab antigen atau PCR COVID-19 sesaat sebelum masuk rawat inap<br/>
         </p>
       </div>
     </div>
@@ -63,17 +62,17 @@
       </div>
       <div class="answer">
         <p>
-        1. Surat Permintaan Rawat Inap (SPRI) atau surat rujukan rawat inap
-        2. Kartu Identitas dan Kartu Kepesertaan Asuransi(BPJS, BPJS Ketenagakerjaan, dan Asuransi lainnya)
-        3. Obat-obatan rutin yang Anda konsumsi(termasuk obat herbal, vitamin, suplemen)
-        4. Pakaian:pakaian tidur/piyama, gaun tidur, sandal bersih, pakaian harian, dan pakaian dalam
+        1. Surat Permintaan Rawat Inap (SPRI) atau surat rujukan rawat inap<br/>
+        2. Kartu Identitas dan Kartu Kepesertaan Asuransi(BPJS, BPJS Ketenagakerjaan, dan Asuransi lainnya)<br/>
+        3. Obat-obatan rutin yang Anda konsumsi(termasuk obat herbal, vitamin, suplemen)<br/>
+        4. Pakaian:pakaian tidur/piyama, gaun tidur, sandal bersih, pakaian harian, dan pakaian dalam<br/>
         5. Alat bantu– kacamata, lensa kontak, tongkat (pastikan Anda memberi label nama pada setiap alat bantu yang Anda bawa)
         </p>
       </div>
     </div>
     <div class="faq">
       <div class="quesstion">
-        <h3>Apakah saya boleh membawa telepon seliler dan konsol permainan elektronik ke ruang rawat?</h3>
+        <h3>Apakah saya boleh membawa telepon seluler dan konsol permainan elektronik ke ruang rawat?</h3>
         <svg width="15" height="10" viewBox="0 0 42 25">
         <path d="M3 3L21 21L39 3" stroke="white" store-width="7" stroke-linecap="round"/>
         </svg>
@@ -93,10 +92,10 @@
       </div>
       <div class="answer">
         <p>
-        Sesuai dengan:
-        1. Peraturan Daerah Kota Depok Nomor 2 Tahun 2020 tentang Perubahan Atas Peraturan Daerah Kota Depok Nomor 3 Tahun 2014 tentang Kawasan Tanpa Rokok
+        Sesuai dengan:<br/>
+        1. Peraturan Daerah Kota Depok Nomor 2 Tahun 2020 tentang Perubahan Atas Peraturan Daerah Kota Depok Nomor 3 Tahun 2014 tentang Kawasan Tanpa Rokok<br/>
         2. Keputusan Direktur Utama Rumah Sakit Rombel Satu TI Nomor 71/SK/DIRUT/ROSATI/2019 tentang Revisi Penetapan Kawasan Tanpa Rokok di Rumah Sakit Rombel Satu TI
-        RS ROSATI merupakan Kawasan Tanpa Rokok (KTR). Dengan demikian, Anda dilarang merokok di seluruh wilayah RS ROSATI tanpa terkecuali. Larangan ini juga berlaku hingga radius 300 meter dihitung mulai dari pagar/batas terluar wilayah RS ROSATI. Selain itu, penggunaan e-cigarrettes dan kegiatan penambahan daya e-cigarrettes juga dilarang di seluruh wilayah RS ROSATI.
+        <p>RS ROSATI merupakan Kawasan Tanpa Rokok (KTR). Dengan demikian, Anda dilarang merokok di seluruh wilayah RS ROSATI tanpa terkecuali. Larangan ini juga berlaku hingga radius 300 meter dihitung mulai dari pagar/batas terluar wilayah RS ROSATI. Selain itu, penggunaan e-cigarrettes dan kegiatan penambahan daya e-cigarrettes juga dilarang di seluruh wilayah RS ROSATI.</p>
         </p>
       </div>
     </div>
@@ -148,10 +147,10 @@
       </div>
       <div class="answer">
         <p>
-        Sejak Desember 2020, RS ROSATI telah bekerja sama dengan BPJS Kesehatan dan dapat melayani pasien JKN yang memerlukan pelayanan kesehatan. Pasien yang memilih prosedur pembayaran dengan menggunakan kepesertaan BPJS Kesehatan wajib mengikuti ketentuan administratif yang berlaku seperti:
-        1. Memiliki kepesertaan BPJS Kesehatan yang aktif
+        Sejak Desember 2020, RS ROSATI telah bekerja sama dengan BPJS Kesehatan dan dapat melayani pasien JKN yang memerlukan pelayanan kesehatan. Pasien yang memilih prosedur pembayaran dengan menggunakan kepesertaan BPJS Kesehatan wajib mengikuti ketentuan administratif yang berlaku seperti:<br/>
+        1. Memiliki kepesertaan BPJS Kesehatan yang aktif<br/>
         2. Mengikuti prosedur rujukan berjenjang dari fasilitas kesehatan sebelumnya
-        Silakan menghubungi staf admisi IGD, rawat jalan, atau rawat inap RS ROSATI untuk mengetahui lebih lanjut mengenai syarat dan prosedur pelayanan bagi peserta BPJS Kesehatan.        
+        <p>Silakan menghubungi staf admisi IGD, rawat jalan, atau rawat inap RS ROSATI untuk mengetahui lebih lanjut mengenai syarat dan prosedur pelayanan bagi peserta BPJS Kesehatan.</p>
         </p>
       </div>
     </div>
@@ -164,10 +163,10 @@
       </div>
       <div class="answer">
         <p>
-        1. Pendaftaran via online
-        Pendaftaran dapat dilakukan melalui website RS ROSATI dengan login terlebih dahulu, lalu klik bagian bar pendaftaran dan masukan data-data yang diminta sesuai urutan, pilih ingin melakukan rawat jalan ke bagian mana dan jam berapa, lalu setelah itu akan muncul bar code nomor antrian.
-        2. Pendaftaran via offline
-        Ketika Anda tiba di RS ROSATI, segera lakukan skrining di lobi utama Gedung Rumah Sakit. Jika Anda dinyatakan lolos skrining dan dapat melakukan pengobatan di Gedung Rumah Sakit. Anda akan diarahkan untuk melakukan pendaftaran di area admisi rawat jalan. Ambil nomor antrian sesuai dengan keperluan kunjungan Anda. Staf admisi akan memanggil berdasarkan nomor urut antrian pendaftaran. Kemudian, staf admisi akan mendaftarkan Anda sesuai janji temu yang telah Anda buat. Pastikan bahwa data yang dikonfirmasi oleh staf admisi sudah sesuai dengan pelayanan yang Anda butuhkan. Segera beritahu staf admisi kami bila terdapat perubahan data dari yang sebelumnya telah Anda sampaikan. Seluruh informasi yang Anda berikan disimpan dalam sistem informasi rumah sakit dan bersifat rahasia. Setiap pasien yang telah terdaftar sebagai pasien RS ROSATI memiliki suatu urutan nomor yang unik, yang disebut nomor rekam medis, untuk memudahkan staf kami menemukan catatan medis dan risalah pengobatan Anda. Harap simpan baik-baik nomor rekam medis Anda untuk pembuatan janji temu selanjutnya.        
+        1. Pendaftaran via online<br/>
+        Pendaftaran dapat dilakukan melalui website RS ROSATI dengan login terlebih dahulu, lalu klik bagian bar pendaftaran dan masukan data-data yang diminta sesuai urutan, pilih ingin melakukan rawat jalan ke bagian mana dan jam berapa, lalu setelah itu akan muncul bar code nomor antrian.<br/>
+        2. Pendaftaran via offline<br/>
+        Ketika Anda tiba di RS ROSATI, segera lakukan skrining di lobi utama Gedung Rumah Sakit. Jika Anda dinyatakan lolos skrining dan dapat melakukan pengobatan di Gedung Rumah Sakit. Anda akan diarahkan untuk melakukan pendaftaran di area admisi rawat jalan. Ambil nomor antrian sesuai dengan keperluan kunjungan Anda. Staf admisi akan memanggil berdasarkan nomor urut antrian pendaftaran. Kemudian, staf admisi akan mendaftarkan Anda sesuai janji temu yang telah Anda buat. Pastikan bahwa data yang dikonfirmasi oleh staf admisi sudah sesuai dengan pelayanan yang Anda butuhkan. Segera beritahu staf admisi kami bila terdapat perubahan data dari yang sebelumnya telah Anda sampaikan. Seluruh informasi yang Anda berikan disimpan dalam sistem informasi rumah sakit dan bersifat rahasia. Setiap pasien yang telah terdaftar sebagai pasien RS ROSATI memiliki suatu urutan nomor yang unik, yang disebut nomor rekam medis, untuk memudahkan staf kami menemukan catatan medis dan risalah pengobatan Anda. Harap simpan baik-baik nomor rekam medis Anda untuk pembuatan janji temu selanjutnya.       
         </p>
       </div>
     </div>
