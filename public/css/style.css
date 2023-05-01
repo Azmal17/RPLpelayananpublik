@@ -12,3 +12,25 @@
     border-radius: 0;
     margin-bottom: -1px;
 }
+
+.padding-top {
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+
+.padding-top1 {
+    padding-top: 75px;
+    padding-bottom: 15px;
+}
+
+.p-left {
+    padding-left: 35px;
+}
+
+.border-top {
+    border-top: 5px;
+}
+
+.border-bot {
+    border-bottom: 5px;
+}

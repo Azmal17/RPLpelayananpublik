@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\View\View;
 use App\Models\pengaduan;
 use App\Models\Patient;
 
@@ -57,4 +60,49 @@ class LoginUserController extends Controller
     //     return redirect('loginuser.loginpage');
         
     // }
+    public function create(): View
+    {
+        return view('pendaftaranuser.create', ["title" => "> Pendaftaran"]);
+    }
+  
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request): RedirectResponse
+    {
+        $request->validate([
+            'no_rm' => 'required',
+            'no_asuransi' => 'required',
+            'nama_pasien' => 'required',
+            'umur' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => 'required',
+            'alamat_pasien' => 'required',
+            'gol_darah' => 'required',
+            'no_telp' => 'required',
+            'email' => 'required',
+            'agama' => 'required',
+            'status_kawin' => 'required',
+        ]);
+        
+        Patient::create($request->all());
+         
+        return redirect()->route('pendaftaranrawatjalan');
+    }
+  
+    /**
+     * Display the specified resource.
+     */
+  
+    /**
+     * Show the form for editing the specified resource.
+     */
+    /**
+     * Update the specified resource in storage.
+     */
+  
+    /**
+     * Remove the specified resource from storage.
+     */
+
 }

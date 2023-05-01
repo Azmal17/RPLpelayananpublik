@@ -89,7 +89,9 @@ Route::get('/pengaduanuser',[LoginUserController::class, 'pengaduan']);
 Route::get('/faq',[LoginUserController::class, 'faq']);
 Route::get('/pri',[LoginUserController::class, 'pri']);
 Route::get('/prj',[LoginUserController::class, 'prj']);
-
+Route::get('/pasien', [LoginUserController::class, 'create']);
+Route::get('/pendaftaranrawatjalan',[LoginUserController::class, 'pendaftaranrawatjalan'])->name ('pendaftaranrawatjalan');
+Route::get('/pasien', [LoginUserController::class, 'create']);
 //Google Login
 Route::get('/auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('/auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
