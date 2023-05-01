@@ -1,7 +1,7 @@
 @extends('layouts.main')
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
 @section('container')     
-    <div class="padding-top1 p-left border-bot border-top">Beranda {{$title}}</div> 
+    <div class="padding-top1">Beranda {{$title}}</div> 
     <main class="container border shadow p-3 mb-5 bg-light rounded border-2">
         <div class="row justify-content-md-center">
             <div class="row"> 
