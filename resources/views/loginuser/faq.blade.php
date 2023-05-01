@@ -1,13 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>FAQ</title>
-    <link rel="stylesheet" href="D:\College\Semester IV\RPL\RPLpelayananpublik\resources\css\stylefaq.css"/>
-</head>
-<body>
-  <section>
+@extends('layouts.main')
+
+@section('container')
     <h2 class="title">FAQ RS ROSATI</h2>
     <div class="faq">
       <div class="quesstion">
@@ -242,7 +235,5 @@
         </p>
       </div>
     </div>
-  </section>
-  <script src="D:\College\Semester IV\RPL\RPLpelayananpublik\resources\js\faq.js"></script>
-</body>
-</html>
+    <script src="D:\College\Semester IV\RPL\RPLpelayananpublik\resources\js\faq.js"></script>
+@endsection
