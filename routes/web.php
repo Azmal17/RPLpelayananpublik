@@ -65,6 +65,9 @@ Route::get('/deletedatarawatjalan/{id}', [AdminController::class, 'deletedataraw
 //crud pengaduan
 Route::get('/datapengaduan',[pengaduanController::class, 'index']) ->name('dataPengaduan');
 
+Route::get('/tambahDataPengaduan',[pengaduanController::class, 'tambahDataPengaduan']) ->name('tambahDataPengaduan');
+Route::post('/insertDataPengaduan',[pengaduanController::class, 'insertDataPengaduan']) ->name('insertDataPengaduan');
+
 Route::get('/tampilDataPengaduan/{id}',[pengaduanController::class, 'tampilDataPengaduan']) ->name('tampilDataPengaduan');
 Route::post('/updateDataPengaduan/{id}',[pengaduanController::class, 'updateDataPengaduan']) ->name('updateDataPengaduan');
 
@@ -82,10 +85,7 @@ Route::post('/loginuserproses',[LoginUserController::class, 'loginuserproses']);
 Route::get('/registerpasien',[RegisterController::class, 'index']);
 Route::post('/registerpasienproses',[RegisterController::class, 'registerpasienproses']);
 Route::get('/dashboarduser',[LoginUserController::class, 'dashboard']);
-
-Route::get('/tambahDataPengaduan',[LoginUserController::class, 'tambahDataPengaduan']) ->name('tambahDataPengaduan');
-Route::post('/insertDataPengaduan',[LoginUserController::class, 'insertDataPengaduan']) ->name('insertDataPengaduan');
-
+Route::get('/pengaduanuser',[LoginUserController::class, 'pengaduan']);
 Route::get('/faq',[LoginUserController::class, 'faq']);
 Route::get('/pri',[LoginUserController::class, 'pri']);
 Route::get('/prj',[LoginUserController::class, 'prj']);
