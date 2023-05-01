@@ -38,7 +38,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{($title === "faq") ? 'active' : '' }}" href="/faq">faq</a>
+                    <a class="nav-link {{($title === "faq") ? 'active' : '' }}" href="/faq">FAQ</a>
                 </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
