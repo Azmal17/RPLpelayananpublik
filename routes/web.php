@@ -89,6 +89,7 @@ Route::get('/pengaduanuser',[LoginUserController::class, 'pengaduan']);
 Route::get('/faq',[LoginUserController::class, 'faq']);
 Route::get('/pri',[LoginUserController::class, 'pri']);
 Route::get('/prj',[LoginUserController::class, 'prj']);
+Route::get('/alur',[LoginUserController::class, 'alur']);
 Route::get('/pendaftaranrawatjalan',[LoginUserController::class, 'pendaftaranrawatjalan'])->name ('pendaftaranrawatjalan');
 
 //Google Login
