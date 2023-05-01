@@ -1,9 +1,7 @@
 @extends('layouts.main')
 
 @section('flex')
-<link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <div class="padding-top p-left border-bot border-top"></div> 
-    <div class="bg-r"></div>
+    <div class="padding-top p-left border-bot border-top"></div>
     <div class="row mt-1">
         <img src="{{asset('img/rawat jalan.webp')}}" alt="rawat jalan" height="500px" >
     </div>
@@ -20,6 +18,6 @@
             <h3 class="text-center">FAQ</h3>
             <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit molestias, dolorem doloremque quam aperiam assumenda eum? Similique, maiores rerum assumenda, illum aspernatur tempora autem dolore, eum eaque dolorem nemo?</p>
         </div>
-    </div>  
+      div>  
     
 @endsection
