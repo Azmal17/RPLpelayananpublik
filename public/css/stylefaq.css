@@ -38,7 +38,7 @@ section {
 }
 
 .quesstion h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .answer {
@@ -50,7 +50,7 @@ section {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .faq.active .answer {
