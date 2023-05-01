@@ -49,6 +49,12 @@ class LoginUserController extends Controller
             "title" => "FAQ"
         ]);
     }
+    public function alur()
+    {
+        return view('loginuser.alur',[
+            "title" => "Alur Pelayanan"
+        ]);
+    }
 
     // public function loginuserproses(Request $request){
     //     if(Auth::attempt($request->only('email','password'))){
