@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>FAQ</title>
-    <link rel="stylesheet" href="./stylefaq.css"/>
+    <link rel="stylesheet" href="D:\College\Semester IV\RPL\RPLpelayananpublik\resources\css\stylefaq.css"/>
 </head>
 <body>
   <section>
@@ -243,6 +243,6 @@
       </div>
     </div>
   </section>
-  <script src="./faq.js"></script>
+  <script src="D:\College\Semester IV\RPL\RPLpelayananpublik\resources\js\faq.js"></script>
 </body>
 </html>
