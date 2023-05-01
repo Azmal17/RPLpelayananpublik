@@ -27,7 +27,7 @@ section {
 .faq {
     margin-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #111;
+    border-bottom: 1px solid #111;
     cursor: pointer;
 }
 
@@ -38,7 +38,7 @@ section {
 }
 
 .quesstion h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .answer {
@@ -50,7 +50,7 @@ section {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .faq.active .answer {
