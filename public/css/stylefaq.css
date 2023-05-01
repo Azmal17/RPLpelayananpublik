@@ -21,6 +21,7 @@ section {
 .title {
     font-size: 2rem;
     margin: 2rem 0rem;
+    text-align: center;
 }
 
 .faq {
@@ -49,7 +50,7 @@ section {
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .faq.active .answer {

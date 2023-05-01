@@ -11,12 +11,13 @@
         </svg>
       </div>
       <div class="answer">
-        <p>Bila Anda atau keluarga mengalami kondisi gawat darurat, segera cari pertolongan ke IGD RS terdekat atau IGD RS ROSATI. Untuk informasi kegawatdaruratan, Anda juga dapat menghubungi IGD RS ROSATI di nomor 021 – 012012012 Untuk kondisi bukan gawat darurat (misalnya pegal-pegal, nyeri tenggorokan, dan infeksi saluran kemih), Anda dapat mempertimbangkan pilihan layanan lainnya seperti:</p>
-        <p>1. Berkonsultasi dengan dokter spesialis di Poliklinik</p>
-            <p>Hubungi Kami: 021-123123123</p>
-            <p>Customer Service RS ROSATI</p>
-        <p>2. Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)</p>
-        <p>3. Berkonsultasi dengan dokter pribadi Anda</p>
+        <p>Bila Anda atau keluarga mengalami kondisi gawat darurat, segera cari pertolongan ke IGD RS terdekat atau IGD RS ROSATI. Untuk informasi kegawatdaruratan, Anda juga dapat menghubungi IGD RS ROSATI di nomor 021 – 012012012 Untuk kondisi bukan gawat darurat (misalnya pegal-pegal, nyeri tenggorokan, dan infeksi saluran kemih), Anda dapat mempertimbangkan pilihan layanan lainnya seperti:
+            1. Berkonsultasi dengan dokter spesialis di Poliklinik <br/>
+                Hubungi Kami: 021-123123123<br/>
+                Customer Service RS ROSATI<br/>
+            2. Berkonsultasi dengan dokter di Fasilitas Kesehatan Tingkat Pertama (Pusat Kesehatan Masyarakat dan Klinik)<br/>
+            3. Berkonsultasi dengan dokter pribadi Anda<br/>
+        </p>
       </div>
     </div>
     <div class="faq">
