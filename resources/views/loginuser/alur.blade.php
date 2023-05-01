@@ -2,11 +2,11 @@
 
 @section('container')
 <main>
-    <link rel="stylesheet" href="public/css/alur.css">
+    <link rel="stylesheet" href="{{asset('css\alur.css')}}">
     <div id="content">
         <article id="pendaftaran" class="card">
 <h2>Alur Pendaftaran Online</h2>
-<img src="public/alurimg/rs.jpg" class="featured-image" alt="rs">
+<img src="{{asset('alurimg/rs.jpg')}}" class="featured-image" alt="rs">
 <h3>Alur Pendaftaran Pasien Rawat Jalan secara Online</h3>
 <p>	1. Buka situs web Rosati <br />
 2. Login menggunakan nomor HP dan masukkan kode OTP nya <br />
@@ -20,7 +20,7 @@
 
 <article id="pengaduan" class="card">
 <h2>Alur Pengaduan</h2>
-<img src="public/alurimg/pengaduan.png" class="featured-image" alt="pengaduan">
+<img src="{{asset('alurimg/pengaduan.png')}}" class="featured-image" alt="pengaduan">
 <h3>Alur Pengaduan secara Online</h3>
 <p>1. Buka situs web Rosati<br />
 2. Setelah masuk ke situs Rosati, pilih pengaduan <br />
@@ -37,7 +37,7 @@
     <h2>RS ROSATI</h2>
     <p>Rumah Sakit Rombel 1 TI</p>
     <figure>
-        <img src="public/alurimg/logoROSATI.png" class="profile img" alt="logorosati">
+        <img src="{{asset('alurimg/logoROSATI.png')}}" class="profile img" alt="logorosati">
     </figure>
     </header>
     <section>
@@ -61,15 +61,12 @@
             </tr>
             
         </table>
-    </section>
+
     </article>
 </aside>
-</main>
-<body>
- 
+
+
 </figure>
-<footer>
-</footer>
-</body>
-</html>
+
+</main>
 @endsection
