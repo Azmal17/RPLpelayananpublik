@@ -11,10 +11,6 @@
               <form action="/insertDataPengaduan" method="post" enctype="multipart/form-data">
                 @csrf 
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nomor Pengaduan</label>
-                  <input type="number" name="no_pengaduan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Nama Pengadu</label>
                   <input type="text" name="nama_pengadu" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
@@ -47,14 +43,6 @@
                   <label for="exampleInputEmail1" class="form-label">Isi Pengaduan</label>
                   <input type="text" name="isi_pengaduan" class="form-control" id="exampleInputEmail1"
                   aria-describedby="emailHelp" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Status</label>
-                  <select class="form-select" name="status" aria-label=".form-select-sm example">
-                    <option selected>Status</option>
-                    <option value="diterima">diterima</option>
-                    <option value="diproses">diproses</option>
-                  </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
