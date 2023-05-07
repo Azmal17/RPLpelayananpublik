@@ -2,6 +2,7 @@
 
 @section('container')
 <link rel="stylesheet" href="{{asset('css\stylefaq.css')}}">
+    <div class="padding-top1">Beranda > {{$title}}</div> 
     <h2 class="title">FAQ RS ROSATI</h2>
     <div class="faq">
       <div class="quesstion">

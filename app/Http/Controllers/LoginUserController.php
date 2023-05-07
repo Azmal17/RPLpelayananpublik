@@ -61,7 +61,7 @@ class LoginUserController extends Controller
     public function pendaftaranrawatjalan()
     {
         return view('loginuser.pendaftaranrawatjalan',[
-            "title" => "> Pendaftaran"
+            "title" => "Pendaftaran"
         ]);
     }
 
