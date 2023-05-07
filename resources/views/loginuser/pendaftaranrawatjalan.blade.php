@@ -2,7 +2,7 @@
 
 @section('container')     
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <div class="padding-top1">Beranda {{$title}}</div> 
+    <div class="padding-top1">Beranda > {{$title}}</div> 
     <main class="container border shadow p-3 mb-5 bg-light rounded border-2">
         <div class="row justify-content-md-center">
             <div class="row"> 
@@ -21,7 +21,7 @@
                 <a href="/pasien" class="text-decoration-none">
                     <div class=" shadow p-3 mb-5 bg-light rounded border border-1">
                         <img src="{{asset('img/patient sol.png')}}" alt="" height="75px" width="75px">
-                        <h1>Pasien Baru <br> </h1>
+                        <h1>Pasien <br> Baru  </h1>
                     </div>
                 </a>
             </div>
