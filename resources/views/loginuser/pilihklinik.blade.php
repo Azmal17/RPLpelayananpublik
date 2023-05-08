@@ -5,7 +5,7 @@
   <div class="row">
       <div class="col-lg-12 margin-tb">
           <div>
-              <h2>Antrian</h2>
+              <center><h2>Antrian</h2></center>
           </div>
           <div class="pull-right">
               <a class="btn btn-primary" href="/pendaftaranuser.create"> Back</a>
