@@ -105,7 +105,7 @@ class LoginUserController extends Controller
         
         Patient::create($request->all());
          
-        return redirect()->route('pendaftaranrawatjalan');
+        return redirect()->route('pilihklinik');
     }
   
     /**
