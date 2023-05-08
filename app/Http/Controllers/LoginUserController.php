@@ -139,6 +139,29 @@ class LoginUserController extends Controller
         return redirect()->route('pilihklinik');
     }
   
+    public function tampilkanNomorAntrian()
+    {
+        // mengambil nomor antrian terakhir dari database
+        $lastAntrian = Antrian::latest()->first();
+
+        // jika tidak ada nomor antrian sebelumnya, nomor antrian dimulai dari 1
+        if (!$lastAntrian) {
+            $nomorAntrian = 1;
+        } else {
+            // jika ada nomor antrian sebelumnya, nomor antrian diambil dari nomor antrian sebelumnya ditambah 1
+            $nomorAntrian = $lastAntrian->nomor_antrian + 1;
+        }
+
+        // membuat record baru pada tabel antrian dengan nomor antrian yang sudah ditentukan
+        $antrian = Antrian::create([
+            'nomor_antrian' => $nomorAntrian,
+            'status' => 'menunggu',
+        ]);
+
+        // mengirim nomor antrian ke view
+        return view('antrian.index', ['nomor_antrian' => $nomorAntrian]);
+
+    }  
     /**
      * Display the specified resource.
      */
