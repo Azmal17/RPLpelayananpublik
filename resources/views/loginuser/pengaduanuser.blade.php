@@ -1,44 +1,46 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="contet-wrapper"></div>
-  <h1 class="text-center mb-5">Pengaduan Rumah Sakit ROSATI</h1>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-8">
-          <div class="card">
-            <div class="card-body">
-              <form action="/insertDataPengaduan" method="post" enctype="multipart/form-data">
-                @csrf 
-                  <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
-                  <input type="text" name="nama_pengadu" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                  aria-describedby="emailHelp" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nomor HP</label>
-                  <input type="text" name="no_hp" class="form-control" id="exampleInputEmail1"
-                  aria-describedby="emailHelp" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Tanggal Kunjungan</label>
-                  <input type="date" name="tanggal_kunjungan" class="form-control" id="exampleInputEmail1"
-                  aria-describedby="emailHelp" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Isi Pengaduan</label>
-                  <input type="text" name="isi_pengaduan" class="form-control" id="exampleInputEmail1"
-                  aria-describedby="emailHelp" >
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
+<div class="padding-top1">
+  <div class="row">
+      <div class="col-lg-12 margin-tb">
+          <div class="pull-left">
+              <h2>Pengaduan Rumah Sakit ROSATI</h2>
           </div>
+      </div>
+
+      <form action="{{ route('pengaduanstore') }}" method="POST">
+          @csrf
+      <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="form-group">
+              <strong>Nama Lengkap:</strong>
+              <input type="text" name="nama_pasien" class="form-control" placeholder="Nama Pasien">
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="form-group">
+              <strong>Nomor Telepon:</strong>
+              <input type="text" name="no_telp" class="form-control" placeholder="Nomor Telepon">
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="form-group">
+              <strong>Email:</strong>
+              <input type="text" name="email" class="form-control" placeholder="Email">
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Tanggal Kunjungan:</strong>
+            <input type="date" name="tanggal_kunjungan" class="form-control" placeholder="Tanggal Kunjungan">
         </div>
-      </div> 
-    </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <button type="submit" href="/pilihklinik" class="btn btn-primary">Submit</button>
+      </div>
+  </div>
+
+  </form>
 </div>
 @endsection
