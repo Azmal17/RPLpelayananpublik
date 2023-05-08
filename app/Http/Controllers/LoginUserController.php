@@ -46,6 +46,20 @@ class LoginUserController extends Controller
             "title" => "Pengaduan"
         ], compact('data'));
     }
+    public function pengaduanstore(Request $request): RedirectResponse
+    {
+        $request->validate([
+            'nama_pengadu' => 'required',
+            'email' => 'required',
+            'no_hp' => 'required',
+            'tanggal_kunjungan' => 'required',
+            'isi_pengaduan' => 'required',
+        ]);
+        
+        Patient::create($request->all());
+         
+        return redirect()->route('pengaduan');
+    }
     public function faq()
     {
         return view('loginuser.faq',[
@@ -108,6 +122,18 @@ class LoginUserController extends Controller
             'email' => 'required',
             'agama' => 'required',
             'status_kawin' => 'required',
+        ]);
+        
+        Patient::create($request->all());
+         
+        return redirect()->route('pilihklinik');
+    }
+
+    public function pilihklinikstore(Request $request): RedirectResponse
+    {
+        $request->validate([
+            'tanggal_kunjungan' => 'required',
+            'klinik' => 'required',
         ]);
         
         Patient::create($request->all());
