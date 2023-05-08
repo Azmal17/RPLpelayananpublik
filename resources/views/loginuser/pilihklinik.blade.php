@@ -4,7 +4,7 @@
 <div class="padding-top1">
   <div class="row">
       <div class="col-lg-12 margin-tb">
-          <div class="pull-left">
+          <div>
               <h2>Antrian</h2>
           </div>
           <div class="pull-right">
