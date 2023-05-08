@@ -2,6 +2,8 @@
 
 @section('container')
 <link rel="stylesheet" href="{{asset('css\stylefaq.css')}}">
+<div class="padding-top1">Beranda > {{$title}}</div> 
+<main class="container border shadow p-3 mb-5 bg-light rounded border-2">
     <h2 class="title">FAQ RS ROSATI</h2>
     <div class="faq">
       <div class="quesstion">
@@ -235,5 +237,6 @@
         </p>
       </div>
     </div>
+</main>
     <script src="{{asset('js/faq.js')}}"></script>
 @endsection

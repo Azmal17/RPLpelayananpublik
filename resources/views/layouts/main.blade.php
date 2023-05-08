@@ -10,10 +10,12 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <div class="logo">
-                    <img src="{{asset('img/logo1.png')}}" alt="logo_rosati" width="60px" height="50px">
+                    <a href="/dashboarduser">
+                        <img src="{{asset('img/logo1.png')}}" alt="logo_rosati" width="60px" height="50px">
+                    </a>
                 </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,7 +33,7 @@
                     Pendaftaran
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/prj">Rawat Jalan</a></li>
+                    <li><a class="dropdown-item" href="/pendaftaranrawatjalan">Rawat Jalan</a></li>
                     <li><a class="dropdown-item" href="/pri">Rawat Inap</a></li>
                     {{-- <li class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
@@ -61,7 +63,9 @@
     <div class="container">
         @yield('container')
     </div>
- 
+    <div class="flex">
+        @yield('flex')
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('css/sign-in.css')}}">
 </body>
