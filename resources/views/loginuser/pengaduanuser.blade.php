@@ -9,7 +9,8 @@
           </div>
       </div>
 
-      <form>
+      <form action="{{ route('pengaduanstore') }}" method="POST">
+          @csrf
       <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="form-group">
