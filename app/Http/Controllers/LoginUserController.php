@@ -39,24 +39,12 @@ class LoginUserController extends Controller
         ], compact('patients'))
                 ->with('i', (request()->input('page', 1) - 1) * 5);;
     }
-    public function pengaduan(): View
+    public function pengaduan()
     {
+        $data = pengaduan::all();
         return view('loginuser.pengaduanuser',[
-            "title" => "Pengaduan"]);
-    }
-    public function pengaduanstore(Request $request): RedirectResponse
-    {
-        $request->validate([
-            'nama_pengadu' => 'required',
-            'email' => 'required',
-            'no_hp' => 'required',
-            'tanggal_kunjungan' => 'required',
-            'isi_pengaduan' => 'required',
-        ]);
-        
-        Patient::create($request->all());
-         
-        return redirect()->route('pengaduan');
+            "title" => "Pengaduan"
+        ], compact('data'));
     }
     public function faq()
     {
