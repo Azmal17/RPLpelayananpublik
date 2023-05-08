@@ -1,55 +1,48 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="padding-top1">
-  <div class="row">
-      <div class="col-lg-12 margin-tb">
-          <div>
-              <center><h2>Antrian</h2></center>
-          </div>
-          <div class="pull-right">
-              <a class="btn btn-primary" href="/pendaftaranuser.create"> Back</a>
-          </div>
-      </div>
-
-      <form action="{{ route('pilihklinikstore') }}" method="POST">
-          @csrf
-      <div class="row">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <div class="card">
-              <div class="card-body">
-                <form action="/klinikstore" method="POST" enctype="multipart/form-data">
-                  @csrf
-                  <div class="form-group">
-                    <label for="">Tanggal Berkunjung</label>
-                    <input type="date" name ="norm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+<body>
+  <br>
+  <br>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <h1 class="text-center">Pilih Klinik</h1>
+        <div class="container">
+            <button type="button" class="btn btn-primary">Back</button>
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <div class="card">
+                  <div class="card-body">
+                    <form action="/pasienstore" method="POST" enctype="multipart/form-data">
+                      @csrf
+                      <div class="form-group">
+                        <label for="">Tanggal Berkunjung</label>
+                        <input type="date" name ="norm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                      </div>
+                      <div class="form-group">
+                      <label for="exampleInputEmail1" class="form-label">Klinik</label>
+                        <select class="form-select" name="jeniskelamin" aria-label=".form-select-sm example">
+                            <option selected>Pilih Klinik</option>
+                            <option value="Umum">Umum</option>
+                            <option value="Bedah">Bedah</option>
+                            <option value="Gigi">Gigi</option>
+                            <option value="Kardiologi">Kardiologi</option>
+                            <option value="Gastroenterologi">Gastroenterologi</option>
+                            <option value="Dermatologi">Dermatologi</option>
+                            <option value="Ortopedi">Ortopedi</option>
+                            <option value="Pediatri">Pediatri</option>  
+                            <option value="Psikiatri">Psikiatri</option>
+                            <option value="Urologi">Urologi</option>
+                            <option value="Hematologi">Hematologi</option>
+                        </select>
+                      </div>
+                      <button type="submit" href="/antrian" class="btn btn-primary">Daftar</button>
+                    </form>
                   </div>
-                  <div class="form-group">
-                  <label for="exampleInputEmail1" class="form-label">Klinik</label>
-                    <select class="form-select" name="jeniskelamin" aria-label=".form-select-sm example">
-                        <option selected>Pilih Klinik</option>
-                        <option value="Umum">Umum</option>
-                        <option value="Bedah">Bedah</option>
-                        <option value="Gigi">Gigi</option>
-                        <option value="Kardiologi">Kardiologi</option>
-                        <option value="Gastroenterologi">Gastroenterologi</option>
-                        <option value="Dermatologi">Dermatologi</option>
-                        <option value="Ortopedi">Ortopedi</option>
-                        <option value="Pediatri">Pediatri</option>  
-                        <option value="Psikiatri">Psikiatri</option>
-                        <option value="Urologi">Urologi</option>
-                        <option value="Hematologi">Hematologi</option>
-                    </select>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                    <button type="submit" href="/antrian" class="btn btn-primary">Daftar</button>
-                 </div>
-                  
-                </form>
+                </div>
               </div>
-            </div>
-          </div>
+            </div>     
         </div>
 
 
