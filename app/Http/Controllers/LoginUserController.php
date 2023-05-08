@@ -139,6 +139,16 @@ class LoginUserController extends Controller
         return redirect()->route('pilihklinik');
     }
   
+    public function tampilkanNomorAntrian()
+    {
+        // inisialisasi variabel nomor antrian
+        $nomor_antrian = 101;
+        
+        // mempassing variabel nomor antrian ke dalam blade
+        return view('tampil_nomor_antrian', ['nomor_antrian' => $nomor_antrian]);
+
+        
+    }  
     /**
      * Display the specified resource.
      */
