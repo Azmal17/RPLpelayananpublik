@@ -10,7 +10,7 @@
             <div class="card-body">
               <form action="/insertDataPengaduan" method="post" enctype="multipart/form-data">
                 @csrf 
-                  <label for="exampleInputEmail1" class="form-label">Nama Pengadu</label>
+                  <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
                   <input type="text" name="nama_pengadu" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
@@ -33,7 +33,6 @@
                   <input type="text" name="isi_pengaduan" class="form-control" id="exampleInputEmail1"
                   aria-describedby="emailHelp" >
                 </div>
-                
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
