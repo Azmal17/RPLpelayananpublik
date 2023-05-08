@@ -9,8 +9,7 @@
           </div>
       </div>
 
-      <form action="{{ route('pengaduan') }}" method="POST">
-          @csrf
+      <form>
       <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="form-group">
