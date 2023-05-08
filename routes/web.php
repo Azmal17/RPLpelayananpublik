@@ -86,7 +86,7 @@ Route::get('/registerpasien',[RegisterController::class, 'index']);
 Route::post('/registerpasienproses',[RegisterController::class, 'registerpasienproses']);
 Route::get('/dashboarduser',[LoginUserController::class, 'dashboard']);
 Route::get('/pengaduanuser',[LoginUserController::class, 'pengaduan']);
-Route::get('/pengaduanstore',[LoginUserController::class, 'pengaduanstore']);
+Route::post('/pengaduanstore',[LoginUserController::class, 'pengaduanstore']);
 Route::get('/faq',[LoginUserController::class, 'faq']);
 Route::get('/pri',[LoginUserController::class, 'pri']);
 Route::get('/prj',[LoginUserController::class, 'prj']);

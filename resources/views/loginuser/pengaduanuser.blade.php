@@ -36,6 +36,12 @@
             <input type="date" name="tanggal_kunjungan" class="form-control" placeholder="Tanggal Kunjungan">
         </div>
       </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Isi Pengaduan:</strong>
+            <input type="text" name="isi_pengaduan" class="form-control" placeholder="Isi Pengaduan">
+        </div>
+    </div>
       <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" href="/pilihklinik" class="btn btn-primary">Submit</button>
       </div>

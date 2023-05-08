@@ -39,12 +39,10 @@ class LoginUserController extends Controller
         ], compact('patients'))
                 ->with('i', (request()->input('page', 1) - 1) * 5);;
     }
-    public function pengaduan()
+    public function pengaduan(): View
     {
-        $data = pengaduan::all();
         return view('loginuser.pengaduanuser',[
-            "title" => "Pengaduan"
-        ], compact('data'));
+            "title" => "Pengaduan"]);
     }
     public function pengaduanstore(Request $request): RedirectResponse
     {
