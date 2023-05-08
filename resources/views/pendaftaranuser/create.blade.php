@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Add New Patient</h2>
+                <h2>Data Pribadi Pasien</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="/pendaftaranrawatjalan"> Back</a>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" href="/pilihklinik" class="btn btn-primary">Submit</button>
         </div>
     </div>
 
