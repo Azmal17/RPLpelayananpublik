@@ -14,7 +14,7 @@
               <div class="col-8">
                 <div class="card">
                   <div class="card-body">
-                    <form action="/tambahdatarawatjalan2" method="POST" enctype="multipart/form-data">
+                    <form action="/pasienstore" method="POST" enctype="multipart/form-data">
                       @csrf
                       <div class="form-group">
                         <label for="">Tanggal Berkunjung</label>
