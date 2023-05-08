@@ -64,6 +64,12 @@ class LoginUserController extends Controller
             "title" => "Pendaftaran"
         ]);
     }
+    public function pilihklinik()
+    {
+        return view('loginuser.pilihklinik',[
+            "title" => "Pilih Klinik"
+        ]);
+    }
 
     // public function loginuserproses(Request $request){
     //     if(Auth::attempt($request->only('email','password'))){
