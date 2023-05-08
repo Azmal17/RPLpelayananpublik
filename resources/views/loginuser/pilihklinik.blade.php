@@ -37,7 +37,7 @@
                             <option value="Hematologi">Hematologi</option>
                         </select>
                       </div>
-                      <button type="submit" href=/antrian class="btn btn-primary">Daftar</button>
+                      <button type="submit" href="/antrian" class="btn btn-primary">Daftar</button>
                     </form>
                   </div>
                 </div>
