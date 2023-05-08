@@ -94,6 +94,9 @@ Route::get('/pendaftaranrawatjalan',[LoginUserController::class, 'pendaftaranraw
 Route::get('/pasien', [LoginUserController::class, 'create']);
 Route::post('/pasienstore', [LoginUserController::class, 'pasienstore'])->name('pasienstore');
 Route::get('/pilihklinik', [LoginUserController::class, 'pilihklinik'])->name('pilihklinik');
+Route::post('/pilihklinikstore', [LoginUserController::class, 'pilihklinikstore'])->name('pilihklinikstore');
+Route::get('/antrian', [LoginUserController::class, 'antrian'])->name('antrian');
+
 
 //Google Login
 Route::get('/auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');

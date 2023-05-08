@@ -71,6 +71,13 @@ class LoginUserController extends Controller
         ]);
     }
 
+    public function antrian()
+    {
+        return view('loginuser.antrian',[
+            "title" => "Antrian"
+        ]);
+    }
+
     // public function loginuserproses(Request $request){
     //     if(Auth::attempt($request->only('email','password'))){
     //         return redirect('loginuser.dashboarduser');
