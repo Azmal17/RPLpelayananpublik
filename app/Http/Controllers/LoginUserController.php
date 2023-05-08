@@ -136,7 +136,7 @@ class LoginUserController extends Controller
         
         Patient::create($request->all());
          
-        return redirect()->route('pilihklinik');
+        return redirect()->route('antrian');
     }
   
     public function tampilkanNomorAntrian()
