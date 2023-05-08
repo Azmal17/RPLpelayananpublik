@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link {{($title === "Alur Layanan") ? 'active' : '' }}" href="/alur">AlurLayanan</a>
+                    <a class="nav-link {{($title === "Alur Layanan") ? 'active' : '' }}" href="/alur">Alur Layanan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{($title === "Pengaduan") ? 'active' : '' }}" href="/pengaduanuser">Pengaduan</a>
