@@ -45,6 +45,7 @@ class LoginUserController extends Controller
         return view('loginuser.pengaduanuser',[
             "title" => "Pengaduan"
         ], compact('data'));
+        return redirect()->route('dataPengaduan')->with('success', 'Data Berhasil Ditambahkan!');
     }
     public function faq()
     {
