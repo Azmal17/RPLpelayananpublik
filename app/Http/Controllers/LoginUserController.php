@@ -136,31 +136,18 @@ class LoginUserController extends Controller
         
         Patient::create($request->all());
          
-        return redirect()->route('antrian');
+        return redirect()->route('pilihklinik');
     }
   
     public function tampilkanNomorAntrian()
     {
-        // mengambil nomor antrian terakhir dari database
-        $lastAntrian = Antrian::latest()->first();
+        // inisialisasi variabel nomor antrian
+        $nomor_antrian = 101;
+        
+        // mempassing variabel nomor antrian ke dalam blade
+        return view('tampil_nomor_antrian', ['nomor_antrian' => $nomor_antrian]);
 
-        // jika tidak ada nomor antrian sebelumnya, nomor antrian dimulai dari 1
-        if (!$lastAntrian) {
-            $nomorAntrian = 1;
-        } else {
-            // jika ada nomor antrian sebelumnya, nomor antrian diambil dari nomor antrian sebelumnya ditambah 1
-            $nomorAntrian = $lastAntrian->nomor_antrian + 1;
-        }
-
-        // membuat record baru pada tabel antrian dengan nomor antrian yang sudah ditentukan
-        $antrian = Antrian::create([
-            'nomor_antrian' => $nomorAntrian,
-            'status' => 'menunggu',
-        ]);
-
-        // mengirim nomor antrian ke view
-        return view('antrian.index', ['nomor_antrian' => $nomorAntrian]);
-
+        
     }  
     /**
      * Display the specified resource.
