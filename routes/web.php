@@ -95,6 +95,7 @@ Route::get('/pasien', [LoginUserController::class, 'create']);
 Route::post('/pasienstore', [LoginUserController::class, 'pasienstore'])->name('pasienstore');
 Route::get('/pilihklinik', [LoginUserController::class, 'pilihklinik'])->name('pilihklinik');
 Route::post('/pilihklinikstore', [LoginUserController::class, 'pilihklinikstore'])->name('pilihklinikstore');
+Route::get('/pendaftaran', [LoginUserController::class, 'daftarantri'])->name('daftarantri');
 Route::get('/antrian', [LoginUserController::class, 'antrian'])->name('antrian');
 Route::get('/index1', [LoginUserController::class, 'pendaftaranindex'])->name('dataantrian');
 Route::get('/editantrian/{id}', [LoginUserController::class, 'editantrian'])->name('editantrian') ;
