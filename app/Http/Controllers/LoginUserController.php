@@ -146,7 +146,7 @@ class LoginUserController extends Controller
 
     public function daftarantri(): View
     {
-        return view('Pendaftaran.addpendaftaran', ["title" => "> Pendaftaran"]);
+        return view('pendaftaran.addpendaftaran', ["title" => "> Pendaftaran"]);
     }
     public function pendaftaranindex (){
         $daftar = Pendaftaran::all();
