@@ -96,6 +96,10 @@ Route::post('/pasienstore', [LoginUserController::class, 'pasienstore'])->name('
 Route::get('/pilihklinik', [LoginUserController::class, 'pilihklinik'])->name('pilihklinik');
 Route::post('/pilihklinikstore', [LoginUserController::class, 'pilihklinikstore'])->name('pilihklinikstore');
 Route::get('/antrian', [LoginUserController::class, 'antrian'])->name('antrian');
+Route::get('/index1', [LoginUserController::class, 'pendaftaranindex'])->name('dataantrian');
+Route::get('/editantrian/{id}', [LoginUserController::class, 'editantrian'])->name('editantrian') ;
+Route::post('/updateantrian/{id}', [LoginUserController::class, 'updateantrian'])->name('updateantrian') ;
+Route::get('/destroyantrian/{id}', [LoginUserController::class, 'destroyantrian'])->name('destroyantrian') ;
 
 
 //Google Login

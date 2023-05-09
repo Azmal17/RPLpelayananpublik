@@ -124,7 +124,7 @@ class LoginUserController extends Controller
         
         Patient::create($request->all());
          
-        return redirect()->route('pilihklinik');
+        return redirect()->route('daftarantri');
     }
   
     public function tampilkanNomorAntrian()
@@ -138,7 +138,7 @@ class LoginUserController extends Controller
         
     } 
     
-    public function index (){
+    public function index1 (){
         return view ('pendaftaranuser.index', ["title" => "> pendaftaran"]);
     }
 
