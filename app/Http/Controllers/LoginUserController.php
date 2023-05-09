@@ -114,7 +114,7 @@ class LoginUserController extends Controller
         
         Patient::create($request->all());
          
-        return redirect()->route('pilihklinik');
+        return redirect()->route('daftarantri');
     }
 
     public function pilihklinikstore(Request $request): RedirectResponse
