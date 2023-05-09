@@ -8,6 +8,8 @@ use Illuminate\Http\Response;
 use Illuminate\View\View;
 use App\Models\pengaduan;
 use App\Models\Patient;
+use App\Models\Pendaftaran;
+
 
 class LoginUserController extends Controller
 {
