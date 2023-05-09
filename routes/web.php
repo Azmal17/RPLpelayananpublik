@@ -101,6 +101,7 @@ Route::get('/index1', [LoginUserController::class, 'pendaftaranindex'])->name('d
 Route::get('/editantrian/{id}', [LoginUserController::class, 'editantrian'])->name('editantrian') ;
 Route::post('/updateantrian/{id}', [LoginUserController::class, 'updateantrian'])->name('updateantrian') ;
 Route::get('/destroyantrian/{id}', [LoginUserController::class, 'destroyantrian'])->name('destroyantrian') ;
+Route::post('/pasienstore', [LoginUserController::class, 'daftarstore'])->name('daftarstore') ;
 
 
 //Google Login
