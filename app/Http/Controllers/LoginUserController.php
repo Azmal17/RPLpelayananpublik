@@ -136,7 +136,55 @@ class LoginUserController extends Controller
         return view('tampil_nomor_antrian', ['nomor_antrian' => $nomor_antrian]);
 
         
-    }  
+    } 
+    
+    public function index (){
+        return view ('pendaftaranuser.index', ["title" => "> pendaftaran"]);
+    }
+
+    public function daftarantri(): View
+    {
+        return view('Pendaftaran.addpendaftaran', ["title" => "> Pendaftaran"]);
+    }
+    public function pendaftaranindex (){
+        $daftar = Pendaftaran::all();
+        return view ('pendaftaran.pendaftaranindex', compact('daftar'), ["title" => "> dashboard"]);
+    }
+
+    public function daftarstore(Request $request){
+        $daftar = Pendaftaran::all();
+        Pendaftaran::create($request->all());
+        return redirect()->route('antrian');
+    } 
+    public function antrian1 (){
+        return view ('pendaftaran.antrian', ["title" => "> antrian"]);
+    }
+    public function editantrian($id)
+    {
+        $daftar = Pendaftaran::find($id);
+        return view('pendaftaran.editantrian', compact('daftar') , ["title" => "> antrian"]);
+    }
+  
+    /**
+     * Update the specified resource in storage.
+     */
+    public function updateantrian(Request $request, $id): RedirectResponse
+    {   $daftar = Pendaftaran::find($id);
+        $daftar->update($request-> all());
+        
+        return redirect()->route('dataantrian');
+    }
+  
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroyantrian($id): RedirectResponse
+    {
+        $daftar = Pendaftaran::find($id);
+        $daftar->delete();
+         
+        return redirect()->route('dataantrian');
+    }
     /**
      * Display the specified resource.
      */
