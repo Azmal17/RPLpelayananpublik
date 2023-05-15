@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css') }}">
   @stack('css')
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
 
   <!-- Preloader -->
