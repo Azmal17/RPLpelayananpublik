@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Inap extends Model
 {
@@ -20,4 +21,9 @@ class Inap extends Model
         'tgl_masuk',
         'tgl_keluar'
     ];
+
+    public function inaprj(): BelongsToMany
+    {
+        return $this->belongsToMany(rawatjalan::class, 'foreign_key', 'owner_key');
+    }
 }
