@@ -38,7 +38,7 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Spesialis</label>
-              <select class="form-select" name="jeniskelamin" aria-label=".form-select-sm example">
+              <select class="form-select" name="spesialis" aria-label=".form-select-sm example">
                 <option selected>Pilih Spesialis</option>
                 <option value="Umum">Umum</option>
                 <option value="Bedah">Bedah</option>

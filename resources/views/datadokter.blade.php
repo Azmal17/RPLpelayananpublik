@@ -12,82 +12,74 @@
 
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
-  <div class="content-header">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1 class="m-0">Data Dokter</h1>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          {{-- <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard v2</li>
-          </ol> --}}
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-  </div>
-  <div class="container">
-    <a  href="/tambahdokter" class="btn btn-success">+ Tambah</a>
-    
-      <div class="row g-3 align-items-center mt-2" >
-        <div class="col-auto">
-          <form action="/dokter" method="GET">
-          <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
-          </form>
+  <div class="content-header"></div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header text-center">
+          <h1 >Data Dokter</h1>
         </div>
-  
-        <div class="col-auto">
-        <a  href="/exportpdf" class="btn btn-info">Export PDF</a>
-        </div>
-  
+        <div class="container-fluid">
+          <a  href="/tambahdokter" class="btn btn-success mt-2">+ Tambah</a>
+            <div class="row g-3 align-items-center mt-2" >
+              <div class="col-auto">
+                <form action="/dokter" method="GET">
+                <input type="search" id="inputPassword6" name="search" class="form-control mb-3" aria-describedby="passwordHelpInline">
+                </form>
+              </div>
         
-  
+              <div class="col-auto">
+              <a  href="/exportpdf" class="btn btn-info mb-3">Export PDF</a>
+              </div>
+        
+              
+        
+          </div>
+          <div class="card-body table-responsive p-0">
+            <table class="table table-bordered">
+              <thead>
+              <tr class="bg-primary">
+                <th class="text-center">No</th>
+                <th class="text-center">Kode Dokter</th>
+                <th class="text-center">Nama Dokter</th>
+                <th class="text-center">Foto</th>
+                <th class="text-center">Jenis Kelamin</th>
+                <th class="text-center">Spesialis</th>
+                <th class="text-center">Alamat</th>
+                <th class="text-center">No Telepon</th>
+                <th class="text-center">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              @php
+                $no = 1;
+              @endphp             
+              @foreach($data as $index => $row)
+              <tr>
+                <th class="text-center" scope="row">{{ $index + $data->firstItem() }} </th>
+                <td class="text-center">{{ $row->kodedokter }}</td>
+                <td class="text-center">{{ $row->namadokter }}</td>
+                <td class="text-center">
+                  <img src="{{ asset('fotodokter/'.$row->foto) }}" style="width: 50px;">
+                </td>
+                <td class="text-center">{{ $row->jeniskelamin }}</td>
+                <td class="text-center">{{ $row->alamat }}</td>
+                <td class="text-center">{{ $row->spesialis }}</td>
+                <td class="text-center">0{{ $row->notelepon }}</td>
+                <td class="text-center">              
+                  <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">Edit</a>
+                  <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}" data-nama="{{ $row->namadokter }}">Delete</a>
+                </td>
+              </tr>
+              @endforeach
+        
+            </tbody>
+            </table>
+            {{ $data->links() }}
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <table class="table">
-        <thead>
-        <tr>
-          <th>No</th>
-          <th>Kode Dokter</th>
-          <th>Nama Dokter</th>
-          <th>Foto</th>
-          <th>Jenis Kelamin</th>
-          <th>Spesialis</th>
-          <th>Alamat</th>
-          <th>No Telepon</th>
-          <th>Aksi</th>
-        </tr>
-      </thead>
-      <tbody>
-        @php
-          $no = 1;
-        @endphp             
-        @foreach($data as $index => $row)
-        <tr>
-          <th scope="row">{{ $index + $data->firstItem() }} </th>
-          <td>{{ $row->kodedokter }}</td>
-          <td>{{ $row->namadokter }}</td>
-          <td>
-            <img src="{{ asset('fotodokter/'.$row->foto) }}" style="width: 50px;">
-          </td>
-          <td>{{ $row->jeniskelamin }}</td>
-          <td>{{ $row->alamat }}</td>
-          <td>{{ $row->spesialis }}</td>
-          <td>0{{ $row->notelepon }}</td>
-          <td>              
-            <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">Edit</a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}" data-nama="{{ $row->namadokter }}">Delete</a>
-          </td>
-        </tr>
-        @endforeach
-  
-      </tbody>
-      </table>
-      {{ $data->links() }}
-    </div>
-  </div>
-
+</div>   
 </div>
 
 

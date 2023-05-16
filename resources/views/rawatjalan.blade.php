@@ -13,60 +13,58 @@
 
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
-  <div class="content-header">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1 class="m-0">Data Rawat Jalan</h1>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          {{-- <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard v2</li>
-          </ol> --}}
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-  </div>
-  <div class="container">
-    <a href="/tambahdatarawatjalan" class="btn btn-primary" >Tambah</a>
-    <div class="row">
-      @if ($message = Session::get('success'))
-          <div class="alert alert-danger" role="alert">
-              {{$message}}
-          </div> 
-      @endif
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">No</th>
-            <th scope="col">No RM</th>
-            <th scope="col">No Registrasi</th>
-            <th scope="col">No Rujukan</th>
-            <th scope="col">Nama Pasien</th>
-            <th scope="col">Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          @php
-            $no = 1;
-          @endphp 
-          @foreach ($data as $index => $row)
-            <tr>
-              <th scope="row">{{ $no++ }}</th>
-              <td>{{$row->norm}}</td>
-              <td>{{$row->noregistrasi}}</td>
-              <td>{{$row->norujukan}}</td>
-              <td>{{$row->namapasien}}</td>
-              <td>
-                  <a href="/tampilkandatarawatjalan/{{$row->id}}" class="btn btn-secondary">Edit</a>
-                  <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-norm="{{$row->norm}}">Delete</a>
-              </td>
-            </tr>
-          @endforeach
-        </tbody>
-      </table>
+  <div class="content-header"></div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header text-center">
+          <h1>Data Rawat Jalan</h1>
+        </div>
+        <div class="container-fluid">
+          <a href="/tambahdatarawatjalan" class="btn btn-primary m-2" >Tambah</a>
+          <div class="row m-2">
+            @if ($message = Session::get('success'))
+                <div class="alert alert-danger" role="alert">
+                    {{$message}}
+                </div> 
+            @endif
+            <div class="card-body table-responsive p-0">
+              <table class="table table-bordered">
+                <thead>   
+                  <tr class="bg-primary">
+                    <th class="text-center" >No</th>
+                    <th class="text-center" >No RM</th>
+                    <th class="text-center" >No Registrasi</th>
+                    <th class="text-center" >No Rujukan</th>
+                    <th class="text-center" >Nama Pasien</th>
+                    <th class="text-center" >Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @php
+                    $no = 1;
+                  @endphp 
+                  @foreach ($data as $index => $row)
+                    <tr>
+                      <th class="text-center" scope="row">{{ $no++ }}</th>
+                      <td class="text-center">{{$row->norm}}</td>
+                      <td class="text-center">{{$row->noregistrasi}}</td>
+                      <td class="text-center">{{$row->norujukan}}</td>
+                      <td class="text-center">{{$row->namapasien}}</td>
+                      <td class="text-center">
+                          <a href="/tampilkandatarawatjalan/{{$row->id}}" class="btn btn-secondary">Edit</a>
+                          <a href="#" class="btn btn-danger delete" data-id="{{$row->id}}" data-norm="{{$row->norm}}">Delete</a>
+                      </td>
+                    </tr>
+                  @endforeach
+                </tbody>
+              </table>
+            </div>
+            
+        </div>
+      </div><!-- /.container-fluid -->
     </div>
+    
+      
   </div>
 </div>
 <!-- Optional JavaScript -->

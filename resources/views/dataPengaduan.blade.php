@@ -9,23 +9,19 @@
 @section('content')
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
-  <div class="content-header">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1 class="m-0">Data Pengaduan</h1>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          {{-- <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard v2</li>
-          </ol> --}}
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-  </div>
+  <div class="content-header"></div>
   <div class="container">
-      <div class="row">
+  <div class="card">
+    <div class="card-header text-center">
+      <h1>Data Pengaduan</h1>
+    </div>
+  <div class="container-fluid">
+      <div class="row m-2">
+        @if ($message = Session::get('success'))
+        <div class="alert alert-success" role="alert">
+          {{$message}}
+        </div>
+      @endif  
         <form class="row g-3" action="/pengaduan" method="GET">
           <div class="col-auto">
             <label for="inputPassword2" class="visually-hidden">Cari</label>
@@ -35,9 +31,10 @@
             <button type="submit" class="btn btn-primary mb-3">Search</button>
           </div>
         </form>
-        <table class="table">
+        <div class="card-body table-responsive p-0">
+        <table class="table table-bordered">
             <thead>
-              <tr>
+              <tr class="bg-primary">
                 <th scope="col">NO</th>
                 <th scope="col">Nomor Pengaduan</th>
                 <th scope="col">Nama Pengadu</th>
@@ -76,13 +73,16 @@
             </tbody>    
           </table>
       </div> 
+      </div>
       <a href='/tambahDataPengaduan' class="btn btn-success mb-3">Tambah</a>
-      @if ($message = Session::get('success'))
-        <div class="alert alert-success" role="alert">
-          {{$message}}
-        </div>
-      @endif  
   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
 </div>
 
 @endsection

@@ -8,6 +8,9 @@
 @endpush
 
 @section('content')
+<br>
+<br>
+<br>
 <div class="contet-wrapper"></div>
   <h1 class="text-center mb-5">Tambah Data Pengaduan</h1>
     <div class="container">
