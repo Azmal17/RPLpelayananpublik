@@ -10,6 +10,13 @@ use App\Http\Controllers\InapController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\LoginUserController;
 use App\Http\Controllers\RegisterController;
+use  App\Http\Controllers\UserController;
+use  App\Http\Controllers\ViewController;
+use  App\Http\Controllers\PoliController;
+use  App\Http\Controllers\PasienController;
+use  App\Http\Controllers\AntrianController;
+use  App\Http\Controllers\KunjunganController;
+use  App\Http\Controllers\PendaftaranController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
