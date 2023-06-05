@@ -42,6 +42,9 @@
                 <li class="nav-item">
                     <a class="nav-link " href="/faq">FAQ</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">CobaGG</a>
+                </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                 </li> --}}
