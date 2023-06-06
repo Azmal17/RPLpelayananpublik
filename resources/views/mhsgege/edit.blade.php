@@ -31,19 +31,19 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>NIM :</strong>
-                <input type="number" name="nim" class="form-control" placeholder="NIM">
+                <input type="number" name="nim" class="form-control" placeholder="NIM" value="{{$mahasiswa->nim}}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Nama:</strong>
-                <input type="text" class="form-control" name="nama_mhs" placeholder="Nama"></input>
+                <input type="text" class="form-control" name="nama_mhs" placeholder="Nama" value= "{{$mahasiswa->nama_mhs}}"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Tanggal Lahir:</strong>
-                <input type="date" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir"></input>
+                <input type="date" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir" value= "{{$mahasiswa->tgl_lahir}}"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -57,7 +57,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Prodi:</strong>
-                <input type="text" class="form-control" name="prodi" placeholder="Prodi"></input>
+                <input type="text" class="form-control" name="prodi" placeholder="Prodi" value= "{{$mahasiswa->prodi}}"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -73,19 +73,19 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>NIK:</strong>
-                <input type="number" class="form-control" name="nik" placeholder="NIK"></input>
+                <input type="number" class="form-control" name="nik" placeholder="NIK" value= "{{$mahasiswa->nik}}"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Telepon:</strong>
-                <input type="number" class="form-control" name="telp" placeholder="Telepon"></input>
+                <input type="number" class="form-control" name="telp" placeholder="Telepon" value= "{{$mahasiswa->telp}}"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Alamat:</strong>
-                <input type="text" class="form-control" name="alamat" placeholder="Alamat"></input>
+                <input type="text" class="form-control" name="alamat" placeholder="Alamat" value= "{{$mahasiswa->alamat}}"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
