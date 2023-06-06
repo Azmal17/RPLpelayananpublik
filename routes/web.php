@@ -185,3 +185,11 @@ Route::resource('/nilaimalindas', NilaimalindaController::class);
 
 //Route UAS Dafa
 Route::resource('dafa_mahasiswa', Dafa_MahasiswaController::class);
+
+//Route UAS Azmal
+Route::get('/mahasiswa',[Azmal_MahasiswaController::class,'index']);
+Route::get('/mahasiswa/create',[Azmal_MahasiswaController::class,'create']);
+Route::post('/mahasiswa/store',[Azmal_MahasiswaController::class,'store']);
+Route::get('/mahasiswa/{IDMahasiswa}/edit',[Azmal_MahasiswaController::class,'edit']);
+Route::put('/mahasiswa/{IDMahasiswa}',[Azmal_MahasiswaController::class,'update']);
+Route::delete('/mahasiswa/{IDMahasiswa}',[Azmal_MahasiswaController::class,'destroy']);
