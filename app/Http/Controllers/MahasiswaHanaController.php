@@ -16,7 +16,7 @@ class MahasiswaHanaController extends Controller
     public function index()
 {
     $mahasiswas = Mahasiswa_hana::latest()->paginate(20);
-    return view('mahasiswa.index', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 20);
+    return view('Mahasiswa.index', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 20);
 }
     /**
      * Show the form for creating a new resource.se
@@ -25,7 +25,7 @@ class MahasiswaHanaController extends Controller
      */
     public function create()
     {
-        return view('mahasiswa.create');
+        return view('Mahasiswa.create');
     }
 
     /**
@@ -54,7 +54,7 @@ class MahasiswaHanaController extends Controller
 
         mahasiswa_hana::create($request->all());
       
-        return redirect()->route('mahasiswas.index')
+        return redirect()->route('Mahasiswas.index')
             ->with('success', 'Data berhasil disimpan.');
     }
 
@@ -77,7 +77,7 @@ class MahasiswaHanaController extends Controller
      */
     public function edit($id_identitas)
     {
-        return view('mahasiswa.edit', compact('mahasiswa'));
+        return view('Mahasiswa.edit', compact('mahasiswa'));
     }
 
     /**
@@ -103,7 +103,7 @@ class MahasiswaHanaController extends Controller
         ]);
 
         $mahasiswas->update($request->all());
-        return redirect()->route('mahasiswas.index')
+        return redirect()->route('Mahasiswas.index')
             ->with('success', 'Data berhasil dirubah');
     }
 
@@ -116,13 +116,13 @@ class MahasiswaHanaController extends Controller
     public function destroy(Mahasiswa_hana $mahasiswas)
     {
         $mahasiswas->delete();
-        return redirect()->route('mahasiswas.index')
+        return redirect()->route('Mahasiswas.index')
             ->with('success', 'Data berhasil dihapus');
     }
 
     public function report()
     {
         $mahasiswas = Mahasiswa_hana::latest()->paginate(20);
-        return view('mahasiswas.report', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 20);
+        return view('Mahasiswas.report', compact('mahasiswas'))->with('i', (request()->input('page', 1) - 1) * 20);
     }
 }
