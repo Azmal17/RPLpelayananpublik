@@ -19,6 +19,13 @@ use  App\Http\Controllers\KunjunganController;
 use  App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\MhsggsController;
 use App\Http\Controllers\Dafa_MahasiswaController;
+use App\Http\Controllers\NilaiMKHanaController;
+use App\Http\Controllers\MahasiswaHanaController;
+
+use  App\Http\Controllers\ProdimalindaController;
+use  App\Http\Controllers\MatakuliahmalindaController;
+use  App\Http\Controllers\MahasiswamalindaController;
+use  App\Http\Controllers\NilaimalindaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -163,5 +170,14 @@ Route::get('/mhsgege/edit', [MhsggsController::class, 'edit'])->name('mhsgege.ed
 Route::delete('/mhsgege/destroy', [MhsggsController::class, 'destroy'])->name('mhsgege.destroy');
 Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.show');
 
+//UAS HANA
+Route::resource('/mahasiswas', MahasiswaHanaController::class);
+Route::resource('/nilaimk', NilaiMKHanaController::class);
 
 //Route::resource('/mhsgege', MhsggsController::class);
+
+// Route Malinda
+Route::resource('/prodimalindas', ProdimalindaController::class);
+Route::resource('/matakuliahmalindas', MatakuliahmalindaController::class);
+Route::resource('/mahasiswamalindas', MahasiswamalindaController::class);
+Route::resource('/nilaimalindas', NilaimalindaController::class);
