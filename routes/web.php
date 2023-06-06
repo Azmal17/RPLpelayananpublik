@@ -27,7 +27,7 @@ use App\Http\Controllers\MhsggsController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/  
+*/
 
 Route::get('/', function () {
     $jumlahdokter = Employee::count();
@@ -124,7 +124,7 @@ Route::get('dashboard', function () {
         return view('dashboard');
     });
 
- 
+
 
 Route::resource('pasien', PasienController::class);
 Route::resource('kunjungan', KunjunganController::class);
@@ -161,4 +161,13 @@ Route::get('/mhsgege/edit', [MhsggsController::class, 'edit'])->name('mhsgege.ed
 Route::delete('/mhsgege/destroy', [MhsggsController::class, 'destroy'])->name('mhsgege.destroy');
 Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.show');
 
+
 //Route::resource('/mhsgege', MhsggsController::class);
+
+//UAS AZMAL
+Route::get('/mahasiswa',[MahasiswaController::class,'index']);
+Route::get('/mahasiswa/create',[MahasiswaController::class,'create']);
+Route::post('/mahasiswa/store',[MahasiswaController::class,'store']);
+
+Route::get('/mahasiswa/{NIM}/edit',[MahasiswaController::class,'edit']);
+Route::put('/mahasiswa/{NIM}',[MahasiswaController::class,'update']);
