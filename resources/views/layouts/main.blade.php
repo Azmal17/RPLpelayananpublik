@@ -47,7 +47,7 @@
                     UAS
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/azmallayout">Azmal Syafiq Fakhri</a></li>
+                    <li><a class="dropdown-item" href="/mahasiswa">Azmal Syafiq Fakhri</a></li>
                     <li><a class="dropdown-item" href="/dafa_mahasiswa">M Dafa Aldian</a></li>
                     <li><a class="dropdown-item" href="/mhsgege">Sugini Injani</a></li>
                     <li><a class="dropdown-item" href="/mahasiswas">Hana Dewi Shoviyah</a></li>
