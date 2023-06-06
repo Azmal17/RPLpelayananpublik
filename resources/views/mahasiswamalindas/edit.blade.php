@@ -37,7 +37,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>NIM:</strong>
-                    <input type="text" name="nim" value="{{ $mahasiswamalinda->nim }}" class="form-control" placeholder="Nama mahasiswamalinda">
+                    <input type="number" name="nim" value="{{ $mahasiswamalinda->nim }}" class="form-control" placeholder="Nama mahasiswamalinda">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -64,13 +64,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>NIK:</strong>
-                    <input type="text" name="nik" value="{{ $mahasiswamalinda->nik }}" class="form-control" placeholder="Nama mahasiswamalinda">
+                    <input type="number" name="nik" value="{{ $mahasiswamalinda->nik }}" class="form-control" placeholder="Nama mahasiswamalinda">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Telepon:</strong>
-                    <input type="text" name="telepon" value="{{ $mahasiswamalinda->telepon }}" class="form-control" placeholder="Nama mahasiswamalinda">
+                    <input type="number" name="telepon" value="{{ $mahasiswamalinda->telepon }}" class="form-control" placeholder="Nama mahasiswamalinda">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

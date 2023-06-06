@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('mahasiswamalindas', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->integer('nim');
+            $table->bigInteger('nim');
             $table->enum('jenis_kelamin', ['Laki-Laki', 'Perempuan']);
             $table->enum('agama', ['Islam', 'Kristen', 'Hindu', 'Budha']);
-            $table->string('nik');
-            $table->string('telepon');
+            $table->bigInteger('nik');
+            $table->bigInteger('telepon');
             $table->text('alamat');
 
             $table->unsignedBigInteger('namaprodi');

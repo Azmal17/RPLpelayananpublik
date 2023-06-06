@@ -36,7 +36,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>NIM:</strong>
-                <input type="text" name="nim" class="form-control" placeholder="nim">
+                <input type="number" name="nim" class="form-control" placeholder="nim">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -64,13 +64,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>NIK:</strong>
-                <input type="text" name="nik" class="form-control" placeholder="nik">
+                <input type="number" name="nik" class="form-control" placeholder="nik">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Telepon:</strong>
-                <input type="text" name="telepon" class="form-control" placeholder="telepon">
+                <input type="number" name="telepon" class="form-control" placeholder="telepon">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
