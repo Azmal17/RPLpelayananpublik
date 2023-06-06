@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 70%;
+    justify-content: center;
+}
+
+tr {
+    text-align: center;
+}

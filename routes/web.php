@@ -18,6 +18,8 @@ use  App\Http\Controllers\AntrianController;
 use  App\Http\Controllers\KunjunganController;
 use  App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\MhsggsController;
+use App\Http\Controllers\Dafa_MahasiswaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -162,3 +164,6 @@ Route::delete('/mhsgege/destroy', [MhsggsController::class, 'destroy'])->name('m
 Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.show');
 
 //Route::resource('/mhsgege', MhsggsController::class);
+
+//uas Dafa
+Route::resource('dafa_mahasiswa', Dafa_MahasiswaController::class);
