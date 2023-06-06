@@ -18,6 +18,8 @@ use  App\Http\Controllers\AntrianController;
 use  App\Http\Controllers\KunjunganController;
 use  App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\MhsggsController;
+use App\Http\Controllers\Dafa_MahasiswaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -163,10 +165,3 @@ Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.sh
 
 
 //Route::resource('/mhsgege', MhsggsController::class);
-
-//UAS AZMAL
-Route::get('/mahasiswa',[MahasiswaController::class,'index']);
-Route::get('/mahasiswa/create',[MahasiswaController::class,'create']);
-Route::post('/mahasiswa/store',[MahasiswaController::class,'store']);
-Route::get('/mahasiswa/{NIM}/edit',[MahasiswaController::class,'edit']);
-Route::put('/mahasiswa/{NIM}',[MahasiswaController::class,'update']);

@@ -48,7 +48,7 @@
                     </a>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Azmal Syafiq Fakhri</a></li>
-                    <li><a class="dropdown-item" href="#">M Dafa Aldian</a></li>
+                    <li><a class="dropdown-item" href="/dafa_mahasiswa">M Dafa Aldian</a></li>
                     <li><a class="dropdown-item" href="/mhsgege">Sugini Injani</a></li>
                     <li><a class="dropdown-item" href="#">Hana Dewi Shoviyah</a></li>
                     <li><a class="dropdown-item" href="#">Malinda Ratnaduhita</a></li>
