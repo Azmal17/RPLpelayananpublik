@@ -168,6 +168,5 @@ Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.sh
 Route::get('/mahasiswa',[MahasiswaController::class,'index']);
 Route::get('/mahasiswa/create',[MahasiswaController::class,'create']);
 Route::post('/mahasiswa/store',[MahasiswaController::class,'store']);
-
 Route::get('/mahasiswa/{NIM}/edit',[MahasiswaController::class,'edit']);
 Route::put('/mahasiswa/{NIM}',[MahasiswaController::class,'update']);
