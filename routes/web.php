@@ -29,7 +29,7 @@ use App\Http\Controllers\Dafa_MahasiswaController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/  
+*/
 
 Route::get('/', function () {
     $jumlahdokter = Employee::count();
@@ -126,7 +126,7 @@ Route::get('dashboard', function () {
         return view('dashboard');
     });
 
- 
+
 
 Route::resource('pasien', PasienController::class);
 Route::resource('kunjungan', KunjunganController::class);
@@ -163,7 +163,5 @@ Route::get('/mhsgege/edit', [MhsggsController::class, 'edit'])->name('mhsgege.ed
 Route::delete('/mhsgege/destroy', [MhsggsController::class, 'destroy'])->name('mhsgege.destroy');
 Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.show');
 
-//Route::resource('/mhsgege', MhsggsController::class);
 
-//uas Dafa
-Route::resource('dafa_mahasiswa', Dafa_MahasiswaController::class);
+//Route::resource('/mhsgege', MhsggsController::class);
