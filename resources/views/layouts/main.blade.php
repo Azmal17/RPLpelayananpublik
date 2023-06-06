@@ -51,7 +51,7 @@
                     <li><a class="dropdown-item" href="/dafa_mahasiswa">M Dafa Aldian</a></li>
                     <li><a class="dropdown-item" href="/mhsgege">Sugini Injani</a></li>
                     <li><a class="dropdown-item" href="/mahasiswas">Hana Dewi Shoviyah</a></li>
-                    <li><a class="dropdown-item" href="#">Malinda Ratnaduhita</a></li>
+                    <li><a class="dropdown-item" href="/mahasiswamalindas">Malinda Ratnaduhita</a></li>
                     {{-- <li class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
                     </ul>

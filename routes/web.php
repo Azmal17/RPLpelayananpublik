@@ -22,6 +22,11 @@ use App\Http\Controllers\Dafa_MahasiswaController;
 use App\Http\Controllers\NilaiMKHanaController;
 use App\Http\Controllers\MahasiswaHanaController;
 
+use  App\Http\Controllers\ProdimalindaController;
+use  App\Http\Controllers\MatakuliahmalindaController;
+use  App\Http\Controllers\MahasiswamalindaController;
+use  App\Http\Controllers\NilaimalindaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -170,3 +175,9 @@ Route::resource('/mahasiswas', MahasiswaHanaController::class);
 Route::resource('/nilaimk', NilaiMKHanaController::class);
 
 //Route::resource('/mhsgege', MhsggsController::class);
+
+// Route Malinda
+Route::resource('/prodimalindas', ProdimalindaController::class);
+Route::resource('/matakuliahmalindas', MatakuliahmalindaController::class);
+Route::resource('/mahasiswamalindas', MahasiswamalindaController::class);
+Route::resource('/nilaimalindas', NilaimalindaController::class);
