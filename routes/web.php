@@ -17,6 +17,7 @@ use  App\Http\Controllers\PasienController;
 use  App\Http\Controllers\AntrianController;
 use  App\Http\Controllers\KunjunganController;
 use  App\Http\Controllers\PendaftaranController;
+use App\Http\Controllers\MhsggsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -150,3 +151,14 @@ Route::get('/welcome', [App\Http\Controllers\BerandaController::class, 'index'])
 Route::get('v-pasien/cetak/{id}', [ViewController::class, 'cetak_antrian'])->name('v_pasien_cetak');
 Route::get('v-pasien/{id}', [ViewController::class, 'show'])->name('v_pasien.show');
 Route::get('laporan', [ViewController::class, 'index']);
+
+//UAS GEGE
+Route::get('/mhsgege', [MhsggsController::class, 'index'])->name('mhsgege.index');
+Route::post('/mhsgege', [MhsggsController::class, 'store'])->name('mhsgege.store');
+Route::get('/mhsgege/create', [MhsggsController::class, 'create'])->name('mhsgege.create');
+Route::put('/mhsgege/update', [MhsggsController::class, 'update'])->name('mhsgege.update');
+Route::get('/mhsgege/edit', [MhsggsController::class, 'edit'])->name('mhsgege.edit');
+Route::delete('/mhsgege/destroy', [MhsggsController::class, 'destroy'])->name('mhsgege.destroy');
+Route::get('/mhsgege/show', [MhsggsController::class, 'show'])->name('mhsgege.show');
+
+//Route::resource('/mhsgege', MhsggsController::class);
