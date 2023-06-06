@@ -42,6 +42,20 @@
                 <li class="nav-item">
                     <a class="nav-link " href="/faq">FAQ</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    UAS
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Azmal Syafiq Fakhri</a></li>
+                    <li><a class="dropdown-item" href="#">M Dafa Aldian</a></li>
+                    <li><a class="dropdown-item" href="#">Sugini Injani</a></li>
+                    <li><a class="dropdown-item" href="#">Hana Dewi Shoviyah</a></li>
+                    <li><a class="dropdown-item" href="#">Malinda Ratnaduhita</a></li>
+                    {{-- <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
+                    </ul>
+                </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                 </li> --}}
