@@ -26,6 +26,7 @@ use  App\Http\Controllers\ProdimalindaController;
 use  App\Http\Controllers\MatakuliahmalindaController;
 use  App\Http\Controllers\MahasiswamalindaController;
 use  App\Http\Controllers\NilaimalindaController;
+use  App\Http\Controllers\Azmal_MahasiswaController;
 
 
 /*
