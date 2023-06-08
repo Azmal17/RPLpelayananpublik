@@ -40,12 +40,12 @@ use  App\Http\Controllers\Azmal_MahasiswaController;
 |
 */
 
-// Route::get('/', function () {
-//     $jumlahdokter = Employee::count();
-//     $jumlahdokterpria = Employee::where('jeniskelamin','Pria')->count();
-//     $jumlahdokterwanita = Employee::where('jeniskelamin','Wanita')->count();
-//     return view('welcome',compact('jumlahdokter','jumlahdokterpria','jumlahdokterwanita'));
-// })->middleware('auth');
+Route::get('/', function () {
+    $jumlahdokter = Employee::count();
+    $jumlahdokterpria = Employee::where('jeniskelamin','Pria')->count();
+    $jumlahdokterwanita = Employee::where('jeniskelamin','Wanita')->count();
+    return view('welcome',compact('jumlahdokter','jumlahdokterpria','jumlahdokterwanita'));
+})->middleware('auth');
 
 
 
@@ -141,7 +141,7 @@ Route::resource('pasien', PasienController::class);
 Route::resource('kunjungan', KunjunganController::class);
 Route::resource('poli', PoliController::class);
 Route::resource('pendaftaran', PendaftaranController::class);
-Route::resource('/', AntrianController::class)->middleware('auth');
+Route::resource('antrian', AntrianController::class);
 Route::get('cetak-antrian', [AntrianController::class, 'cetak'])->name('cetak_antrian');
 Route::post('next-antrian', [AntrianController::class, 'next_antrian'])->name('next_antrian');
 Route::post('reset-antrian', [AntrianController::class, 'reset_antrian'])->name('reset_antrian');
