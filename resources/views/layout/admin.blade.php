@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
   <title>Pelayanan Publik ROSATI</title>
 
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
@@ -13,6 +15,8 @@
   <link rel="stylesheet" href="{{ asset('template/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css') }}">
+  <link rel="icon" href="{{ asset('template/dist/img/logo1.png') }}">
+  <link rel="stylesheet" href="{{ asset('css/tble.css') }}">
   @stack('css')
 </head>
 <body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -181,7 +185,7 @@
         </div>
       </div>
 
-      <!-- SidebarSearch Form -->
+      {{-- <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
@@ -191,7 +195,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -249,7 +253,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/patients" class="nav-link">
+            <a href="/pasien" class="nav-link">
               <i class="nav-icon fas fa-hospital-user"></i>
               <p>
                 Data Pasien
@@ -259,10 +263,20 @@
           </li>
 
           <li class="nav-item">
-            <a href="/rawatjalan" class="nav-link">
+            <a href="/kunjungan" class="nav-link">
               <i class="nav-icon fas fa-wheelchair"></i>
               <p>
-                Data Rawat Jalan
+                Data Pendaftaran
+                
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/poli" class="nav-link">
+              <i class="nav-icon fas fa-hospital"></i>
+              <p>
+                Data Poliklinik
                 
               </p>
             </a>
@@ -945,7 +959,23 @@
 <script src="{{ asset('template/dist/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('template/dist/js/pages/dashboard2.js') }}"></script>
+<!-- Vendor JS Files -->
+<script src="{{ asset('assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/chart.js/chart.umd.js') }}"></script>
+<script src="{{ asset('assets/vendor/echarts/echarts.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/quill/quill.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
+<script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
 
+<!-- Template Main JS File -->
+<script src="{{ asset('assets') }}/js/main.js"></script>
+<script src="{{ asset('assets') }}/js/jquery.js"></script>
+    
+@yield('javascript')
 @stack('scripts')
+
+ 
 </body>
 </html>

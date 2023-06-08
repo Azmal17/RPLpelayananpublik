@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="icon" href="{{ asset('template/dist/img/logo1.png') }}">
     @stack('css')
     <title>Rosati | </title>
   </head>
   <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-color1">
             <div class="container-fluid">
-                <div class="logo">
+                <div class="logo1">
                     <a href="/dashboarduser">
                         <img src="{{asset('img/logo1.png')}}" alt="logo_rosati" width="60px" height="50px">
                     </a>
@@ -28,16 +29,8 @@
                 <li class="nav-item">
                     <a class="nav-link " href="/pengaduanuser">Pengaduan</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pendaftaran
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route('pendaftaran.create') }}">Rawat Jalan</a></li>
-                    <li><a class="dropdown-item" href="/pri">Rawat Inap</a></li>
-                    {{-- <li class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{ route('pendaftaran.create') }}">Pendaftaran</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="/faq">FAQ</a>
@@ -62,10 +55,10 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/loginuser">Login</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                 </ul>
-
+ 
                 {{-- <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -73,7 +66,7 @@
             </div>
             </div>
         </nav>
-    </header>
+    </header>   
     <div class="container">
         @yield('container')
     </div>

@@ -49,9 +49,9 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <span class="card-title">Identitas Pasien</span>
+                            <div class="card ">
+                                <div class="card-header text-center">
+                                    <span class="card-title ">Identitas Pasien</span>
                                 </div>
                                 <div class="card-body pt-3">
                                     <div class="row">
@@ -80,7 +80,39 @@
                                                     <td>:</td>
                                                     <td>{{ $antrian->nama }}</td>
                                                 </tr>
+                                                <tr>
+                                                    <th>No HP</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->nohp }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Tempat lahir</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->tempat_lahir }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Jenis kelamin</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->jenis_kelamin }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Golongan darah</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->goldar }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Status perkawinan</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->status_perkawinan }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Alamat</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->alamat }}</td>
+                                                </tr>
                                             </table>
+                                            <a href="{{ route('pendaftaran.create')}}" target="_blank"
+                                                class="btn btn-sm btn-primary">Lanjut</a>
                                         </div>
                                     </div>
                                 </div>

@@ -16,24 +16,10 @@
     <div class="container">
       <div class="card">
         <div class="card-header text-center">
-          <h1 >Data Dokter</h1>
+          <h1 class="font-weight-bold">Data Dokter</h1>
         </div>
         <div class="container-fluid">
-          <a  href="/tambahdokter" class="btn btn-success mt-2">+ Tambah</a>
-            <div class="row g-3 align-items-center mt-2" >
-              <div class="col-auto">
-                <form action="/dokter" method="GET">
-                <input type="search" id="inputPassword6" name="search" class="form-control mb-3" aria-describedby="passwordHelpInline">
-                </form>
-              </div>
-        
-              <div class="col-auto">
-              <a  href="/exportpdf" class="btn btn-info mb-3">Export PDF</a>
-              </div>
-        
-              
-        
-          </div>
+          <a  href="/tambahdokter" class="btn btn-success mb-3 mt-3">+ Tambah</a>
           <div class="card-body table-responsive p-0">
             <table class="table table-bordered">
               <thead>
@@ -55,17 +41,17 @@
               @endphp             
               @foreach($data as $index => $row)
               <tr>
-                <th class="text-center" scope="row">{{ $index + $data->firstItem() }} </th>
-                <td class="text-center">{{ $row->kodedokter }}</td>
-                <td class="text-center">{{ $row->namadokter }}</td>
-                <td class="text-center">
+                <th scope="row">{{ $index + $data->firstItem() }} </th>
+                <td >{{ $row->kodedokter }}</td>
+                <td >{{ $row->namadokter }}</td>
+                <td >
                   <img src="{{ asset('fotodokter/'.$row->foto) }}" style="width: 50px;">
                 </td>
-                <td class="text-center">{{ $row->jeniskelamin }}</td>
-                <td class="text-center">{{ $row->alamat }}</td>
-                <td class="text-center">{{ $row->spesialis }}</td>
-                <td class="text-center">0{{ $row->notelepon }}</td>
-                <td class="text-center">              
+                <td >{{ $row->jeniskelamin }}</td>
+                <td >{{ $row->alamat }}</td>
+                <td >{{ $row->spesialis }}</td>
+                <td >0{{ $row->notelepon }}</td>
+                <td >              
                   <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">Edit</a>
                   <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}" data-nama="{{ $row->namadokter }}">Delete</a>
                 </td>

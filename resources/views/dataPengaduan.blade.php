@@ -16,21 +16,13 @@
       <h1>Data Pengaduan</h1>
     </div>
   <div class="container-fluid">
+    <a href='/tambahDataPengaduan' class="btn btn-success mb-3 mt-3 ml-2">Tambah</a>
       <div class="row m-2">
         @if ($message = Session::get('success'))
         <div class="alert alert-success" role="alert">
           {{$message}}
         </div>
       @endif  
-        <form class="row g-3" action="/pengaduan" method="GET">
-          <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Cari</label>
-              <input type="search" class="form-control" name="search" id="inputPassword2" placeholder="Cari">
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Search</button>
-          </div>
-        </form>
         <div class="card-body table-responsive p-0">
         <table class="table table-bordered">
             <thead>
@@ -74,7 +66,7 @@
           </table>
       </div> 
       </div>
-      <a href='/tambahDataPengaduan' class="btn btn-success mb-3">Tambah</a>
+      
   </div>
   </div>
   </div>

@@ -54,8 +54,8 @@ class PendaftaranController extends Controller
 
             $addKunjungan = Kunjungan::create($kunjungan);
             if ($addKunjungan) {
-                return redirect()->route('kunjungan.index')
-                    ->with('success', 'Data pendaftaran berhasil disimpan.');
+                return redirect()->route('v_pasien.show', $addKunjungan->id_kunjungan)
+                ->with('success', 'Data pendaftaran berhasil disimpan.');
             }
         } else {
 
@@ -91,14 +91,8 @@ class PendaftaranController extends Controller
 
             // dd($addPasien->id_identitas);
             if ($addPasien and $addKunjungan) {
-                if(Auth::check()){
-                    return redirect()->route('kunjungan.index')
-                    ->with('success', 'Data pendaftaran berhasil disimpan.');
-                }else{
-                    // dd($addPasien);
-                    return redirect()->route('v_pasien.show', $addPasien->id_identitas)
-                    ->with('success', 'Data pendaftaran berhasil disimpan.');
-                }
+                return redirect()->route('v_pasien.show', $addKunjungan->id_kunjungan);
+                
             }
         }
 

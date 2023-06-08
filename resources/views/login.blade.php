@@ -19,10 +19,9 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Admin</b> ROSATI</a>
+      <p href="../../index2.html" class="h1"><b>ROSATI</b></p>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="/loginproses" method="post">
         @csrf
@@ -72,8 +71,12 @@
         <a href="/register" class="text-center">Register a new membership</a>
       </p>
     </div>
+    <div class="col-4">
+      <a href="/dashboarduser"><button class="btn btn-success btn-block">Kembali</button></a>
+    </div>
     <!-- /.card-body -->
   </div>
+  
   <!-- /.card -->
 </div>
 <!-- /.login-box -->

@@ -50,13 +50,14 @@ class KunjunganController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id_kunjungan)
     {
         $antrian = DB::table('kunjungan')
             ->select('poli.id_poli', 'poli.kode', 'poli.nama_poli', 'kunjungan.no_antrian', 'kunjungan.created_at', 'kunjungan.id_kunjungan')
             ->join('poli', 'kunjungan.id_poli', '=', 'poli.id_poli')
-            ->where('kunjungan.id_kunjungan', '=', $id)
+            ->where('kunjungan.id_kunjungan', '=', $id_kunjungan)
             ->first();
+        
 
         return view('kunjungan.cetak-antrian', compact('antrian'));
     }
@@ -91,8 +92,11 @@ class KunjunganController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
+    {         
+        $kunjungans = Kunjungan::find($id);
+        $kunjungans->delete();
+         
+        return redirect()->route('kunjungan.index')->with('success', 'Data berhasil dihapus.');;
     }
     public function report()
     {

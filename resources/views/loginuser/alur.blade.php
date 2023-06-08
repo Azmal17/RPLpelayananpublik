@@ -1,9 +1,8 @@
 @extends('layouts.main')
 
 @section('container')
-<main>
     <link rel="stylesheet" href="{{asset('css\alur.css')}}">
-    <div class="padding-top1">Beranda > {{$title}}</div> 
+    <div class="padding-top2"></div> 
     <div id="content">
         <article id="pendaftaran" class="card">
 <h2>Alur Pendaftaran Online</h2>
@@ -65,9 +64,10 @@
 
     </article>
 </aside>
+</body>
+
 
 
 </figure>
 
-</main>
 @endsection

@@ -84,6 +84,9 @@ main{
         padding: 0;
     }
 }
+article {
+    margin-bottom: 20px;
+}
 header{
     display: inline;
 }

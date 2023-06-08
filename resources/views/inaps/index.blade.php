@@ -13,7 +13,7 @@
                     </div>
                     <div class="container-fluid">
                         <div class="pull-right">
-                            <a class="btn btn-success ml-2 mt-2" href="{{ route('inaps.create') }}"> Create New Data</a>
+                            <a class="btn btn-success ml-2 mt-2" href="{{ route('inaps.create') }}"> Tambah</a>
                         </div>    
                         <div class="row m-2">
   
@@ -39,17 +39,17 @@
                                 </tr>
                                 @foreach ($inaps as $inap)
                                 <tr>
-                                    <td class="text-center">{{ ++$i }}</td>
-                                    <td class="text-center">{{ $inap->no_registrasi }}</td>
-                                    <td class="text-center">{{ $inap->no_rm }}</td>
-                                    <td class="text-center">{{ $inap->nama_pasien }}</td>
-                                    <td class="text-center">{{ $inap->kode_dokter }}</td>
-                                    <td class="text-center">{{ $inap->nama_dokter }}</td>
-                                    <td class="text-center">{{ $inap->no_kamar }}</td>
-                                    <td class="text-center">{{ $inap->no_rujukan }}</td>
-                                    <td class="text-center">{{ $inap->tgl_masuk }}</td>
-                                    <td class="text-center">{{ $inap->tgl_keluar }}</td>
-                                    <td class="text-center">
+                                    <td >{{ ++$i }}</td>
+                                    <td >{{ $inap->no_registrasi }}</td>
+                                    <td >{{ $inap->no_rm }}</td>
+                                    <td >{{ $inap->nama_pasien }}</td>
+                                    <td >{{ $inap->kode_dokter }}</td>
+                                    <td >{{ $inap->nama_dokter }}</td>
+                                    <td >{{ $inap->no_kamar }}</td>
+                                    <td >{{ $inap->no_rujukan }}</td>
+                                    <td >{{ $inap->tgl_masuk }}</td>
+                                    <td >{{ $inap->tgl_keluar }}</td>
+                                    <td >
                                         <form action="{{ route('inaps.destroy',$inap->id) }}" method="POST">
                         
                             
