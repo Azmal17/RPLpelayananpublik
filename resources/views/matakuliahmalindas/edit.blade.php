@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('mahasiswamalindas.layout')
    
 @section('content')
     <div class="row">
