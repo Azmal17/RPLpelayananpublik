@@ -30,7 +30,7 @@ class AntrianController extends Controller
         }
 
         // dd($data_antrian);
-        return view('antrian.cetak', compact('data_antrian'));
+        return view('Antrian.cetak', compact('data_antrian'));
     }
 
     public function index()
@@ -38,13 +38,13 @@ class AntrianController extends Controller
         $antrians = FacadesDB::table('antrian')
             ->join('poli', 'antrian.id_poli', '=', 'poli.id_poli')
             ->get();
-        return view('antrian.index', compact('antrians'));
+        return view('Antrian.index', compact('antrians'));
     }
 
     public function create()
     {
         $polis = Poli::all();
-        return view('antrian.create', compact('polis'));
+        return view('Antrian.create', compact('polis'));
     }
 
     public function store(Request $request)
@@ -67,7 +67,7 @@ class AntrianController extends Controller
 
     public function edit(Antrian $antrian)
     {
-        return view('antrian.edit', compact('antrian'));
+        return view('Antrian.edit', compact('antrian'));
     }
 
     public function update(Request $request, Antrian $antrian)
