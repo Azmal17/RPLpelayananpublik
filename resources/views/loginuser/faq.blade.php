@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
 <link rel="stylesheet" href="{{asset('css\stylefaq.css')}}">
 <div class="padding-top1"></div> 
 <main class="container border shadow p-3 mb-5 bg-light rounded border-2">

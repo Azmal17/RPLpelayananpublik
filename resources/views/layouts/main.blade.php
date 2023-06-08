@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-color1">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <div class="logo1">
                     <a href="/dashboarduser">

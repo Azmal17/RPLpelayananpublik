@@ -13,6 +13,8 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets') }}/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    @stack('css')
     @if ($errors->any())
         <div class="alert alert-danger">
             <strong>Whoops!</strong> There were some problems with your input.<br><br>

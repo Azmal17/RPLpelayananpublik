@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
 @section('flex')
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
+
     <div class="padding-top p-left border-bot border-top " ></div>
     <div class="container">
         <div c></div>
