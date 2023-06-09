@@ -11,6 +11,9 @@
                     </div>
     
                     <div class="card-body">
+                        <div class="my-3">
+                            <button class="btn btn-warning" onclick="resetAntrian()">Reset Antrian</button>
+                        </div>
                         <hr>
                         <div class="row mt-3">
                             @foreach ($antrians as $a)
