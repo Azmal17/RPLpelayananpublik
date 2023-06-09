@@ -11,10 +11,6 @@
                     </div>
     
                     <div class="card-body">
-                        <div class="my-3">
-                            <a hraf="{{ route('poli.create') }}" class="btn btn-success">Tambah Data Antrian</a>
-                            <button class="btn btn-warning" onclick="resetAntrian()">Reset Antrian</button>
-                        </div>
                         <hr>
                         <div class="row mt-3">
                             @foreach ($antrians as $a)
