@@ -30,7 +30,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Jenis kelamin:</strong>
-                        <select name="jenis_kelamin" >
+                        <select name="jenis_kelamin" class="form-control" >
                             <option selected disabled>Pilih jenis kelamin</option>
                             <option value="Pria">Pria</option>
                             <option value="Wanita">Wanita</option>
@@ -40,7 +40,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Prodi:</strong>
-                        <select name="prodi" >
+                        <select name="prodi" class="form-control" >
                             <option selected disabled>Pilih prodi</option>
                             <option value="Teknik informatika">Teknik informatika</option>
                             <option value="Sistem informasi">Sistem informasi</option>
@@ -50,7 +50,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Agama:</strong>
-                        <select name="agama" >
+                        <select name="agama" class="form-control" >
                             <option selected disabled="">Pilih agama</option>
                             <option value="Islam">Islam</option>
                             <option value="Kristen">Kristen</option>
@@ -75,7 +75,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Alamat:</strong>
-                        <textarea name="alamat" id=""></textarea>
+                        <input type="text" name="alamat" placeholder="Alamat" class="form-control">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 ">
