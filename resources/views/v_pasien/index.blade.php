@@ -91,6 +91,11 @@
                                                     <td>{{ $antrian->tempat_lahir }}</td>
                                                 </tr>
                                                 <tr>
+                                                    <th>Tanggal lahir</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->tanggal_lahir }}</td>
+                                                </tr>
+                                                <tr>
                                                     <th>Jenis kelamin</th>
                                                     <td>:</td>
                                                     <td>{{ $antrian->jenis_kelamin }}</td>
@@ -99,6 +104,11 @@
                                                     <th>Golongan darah</th>
                                                     <td>:</td>
                                                     <td>{{ $antrian->goldar }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Agama</th>
+                                                    <td>:</td>
+                                                    <td>{{ $antrian->agama }}</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Status perkawinan</th>
