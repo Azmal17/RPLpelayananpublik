@@ -12,9 +12,9 @@
                         <h1>Data Pengaduan Rumah Sakit ROSATI</h1>
                     </div>
                     <div class="container-fluid">
-                        <div class="pull-right">
+                        {{-- <div class="pull-right">
                             <a class="btn btn-success ml-2 mt-2" href="{{ route('pengaduanusers.create') }}"> Buat Pengaduan</a>
-                        </div>    
+                        </div>     --}}
                         <div class="row m-2">
   
                         @if ($message = Session::get('success'))
