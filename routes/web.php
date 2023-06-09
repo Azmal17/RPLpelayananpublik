@@ -5,7 +5,6 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\AdminController;
 use App\Models\Employee;
-use App\Http\Controllers\pengaduanController;
 use App\Http\Controllers\InapController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\LoginUserController;
@@ -81,17 +80,6 @@ Route::get('/tampilkandatarawatjalan/{id}', [AdminController::class, 'tampilkand
 Route::post('/updatedatarawatjalan/{id}', [AdminController::class, 'updatedatarawatjalan'])->name('updatedatarawatjalan')->middleware('auth') ;
 
 Route::get('/deletedatarawatjalan/{id}', [AdminController::class, 'deletedatarawatjalan'])->name('deletedatarawatjalan')->middleware('auth') ;
-
-//crud pengaduan
-Route::get('/datapengaduan',[pengaduanController::class, 'index']) ->name('dataPengaduan');
-
-Route::get('/tambahDataPengaduan',[pengaduanController::class, 'tambahDataPengaduan']) ->name('tambahDataPengaduan');
-Route::post('/insertDataPengaduan',[pengaduanController::class, 'insertDataPengaduan']) ->name('insertDataPengaduan');
-
-Route::get('/tampilDataPengaduan/{id}',[pengaduanController::class, 'tampilDataPengaduan']) ->name('tampilDataPengaduan');
-Route::post('/updateDataPengaduan/{id}',[pengaduanController::class, 'updateDataPengaduan']) ->name('updateDataPengaduan');
-
-Route::get('/deletePengaduan/{id}',[pengaduanController::class, 'deletePengaduan']) ->name('deletePengaduan');
 
 // crud Rawat Inap
 Route::resource('inaps', InapController::class)->middleware('auth');
@@ -195,6 +183,7 @@ Route::get('/mahasiswa/{IDMahasiswa}/edit',[Azmal_MahasiswaController::class,'ed
 Route::put('/mahasiswa/{IDMahasiswa}',[Azmal_MahasiswaController::class,'update']);
 Route::delete('/mahasiswa/{IDMahasiswa}',[Azmal_MahasiswaController::class,'destroy']);
 
+//crud pengaduan
 Route::get('/pengaduanusers',[PengaduanuserController::class,'index'])->name('pengaduanusers.index');
 Route::post('/pengaduanusers',[PengaduanuserController::class,'store'])->name('pengaduanusers.store');
 Route::get('/pengaduanusers/create',[PengaduanuserController::class,'create'])->name('pengaduanusers.create');
