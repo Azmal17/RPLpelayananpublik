@@ -7,7 +7,7 @@
                     <h2>Edit data mahasiswa</h2>
                 </div>
                 <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('dafa_mahasiswa.index') }}"> Kembali</a>
+                    <a class="btn btn-info" href="{{ route('dafa_mahasiswa.index') }}"> Kembali</a>
                 </div>
             </div>
         </div>
@@ -17,13 +17,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>ID mahasiswa:</strong>
-                    <input type="number" name="id_mahasiswa" placeholder="IDmahasiswa" value="{{$mahasiswa->id_mahasiswa}}">
+                    <input type="number" class="form-control" name="id_mahasiswa" placeholder="IDmahasiswa" value="{{$mahasiswa->id_mahasiswa}}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nama:</strong>
-                    <input type="text" name="nama" placeholder="Nama" value="{{$mahasiswa->nama}}"><br>
+                    <input type="text" class="form-control" name="nama" placeholder="Nama" value="{{$mahasiswa->nama}}"><br>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -49,7 +49,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Agama:</strong>
-                    <select name="agama" >
+                    <select name="agama" class="form-control" >
                         <option selected disabled>Pilih agama</option>
                         <option value="Islam" @if ($mahasiswa->agama == "Islam") selected @endif >Islam</option>
                         <option value="Kristen" @if ($mahasiswa->agama == "Kristen") selected @endif >Kristen</option>
