@@ -31,7 +31,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <button class="btn btn-success" onclick="pasienBaru()">Pesien Baru</button>
+                    <button class="btn btn-success" onclick="pasienBaru()">Pasien Baru</button>
                     <button class="btn btn-info" onclick="pasienLama()">Pasien Lama</button>
 
                 </div>
