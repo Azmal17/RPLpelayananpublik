@@ -8,7 +8,7 @@
                     <h1>Data Mahasiswa</h1>
                 </div>
                 <div class="pull-right">
-                    <a href="{{ route('dafa_mahasiswa.create') }}">Tambah data</a>               
+                    <a href="{{ route('dafa_mahasiswa.create') }}"> <button class="btn btn-primary">Tambah data</button> </a>               
                 </div>
             </div>
         </div>
