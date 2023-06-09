@@ -107,7 +107,7 @@
                     <label class="col-sm-2 col-form-label">&nbsp;</label>
                     <div class="col-sm-10">
                         <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="{{ route('poli.index') }}" class="btn btn-outline-secondary">Kembali</a>
+                        <a href="{{ route('pendaftaran.index') }}" class="btn btn-outline-secondary">Kembali</a>
                     </div>
                 </div>
 
@@ -214,7 +214,7 @@
                     <label class="col-sm-2 col-form-label">&nbsp;</label>
                     <div class="col-sm-10">
                         <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="{{ route('poli.index') }}" class="btn btn-outline-secondary">Kembali</a>
+                        <a href="{{ route('pendaftaran.index') }}" class="btn btn-outline-secondary">Kembali</a>
                     </div>
                 </div>`;
     </script>
