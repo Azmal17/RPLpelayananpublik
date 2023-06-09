@@ -17,11 +17,12 @@ use  App\Http\Controllers\PasienController;
 use  App\Http\Controllers\AntrianController;
 use  App\Http\Controllers\KunjunganController;
 use  App\Http\Controllers\PendaftaranController;
+use  App\Http\Controllers\PengaduanuserController;
+
 use App\Http\Controllers\MhsggsController;
 use App\Http\Controllers\Dafa_MahasiswaController;
 use App\Http\Controllers\NilaiMKHanaController;
 use App\Http\Controllers\MahasiswaHanaController;
-
 use  App\Http\Controllers\ProdimalindaController;
 use  App\Http\Controllers\MatakuliahmalindaController;
 use  App\Http\Controllers\MahasiswamalindaController;
@@ -193,3 +194,11 @@ Route::post('/mahasiswa/store',[Azmal_MahasiswaController::class,'store']);
 Route::get('/mahasiswa/{IDMahasiswa}/edit',[Azmal_MahasiswaController::class,'edit']);
 Route::put('/mahasiswa/{IDMahasiswa}',[Azmal_MahasiswaController::class,'update']);
 Route::delete('/mahasiswa/{IDMahasiswa}',[Azmal_MahasiswaController::class,'destroy']);
+
+Route::get('/pengaduanusers',[PengaduanuserController::class,'index'])->name('pengaduanusers.index');
+Route::post('/pengaduanusers',[PengaduanuserController::class,'store'])->name('pengaduanusers.store');
+Route::get('/pengaduanusers/create',[PengaduanuserController::class,'create'])->name('pengaduanusers.create');
+Route::put('/pengaduanusers/{pengaduanuser}',[PengaduanuserController::class,'update'])->name('pengaduanusers.update');
+Route::get('/pengaduanusers/{pengaduanuser}/edit',[PengaduanuserController::class,'edit'])->name('pengaduanusers.edit');
+Route::delete('/pengaduanusers/{pengaduanuser}',[PengaduanuserController::class,'destroy'])->name('pengaduanusers.destroy');
+Route::get('/pengaduanusers/{pengaduanuser}',[PengaduanuserController::class,'show'])->name('pengaduanusers.show');

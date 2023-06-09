@@ -180,9 +180,9 @@
         <div class="image">
           <img src="{{ asset('template/dist/img/user.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
-        <div class="info">
+        {{-- <div class="info">
           <a href="#" class="d-block">{{ Auth::user()->name }}</a>
-        </div>
+        </div> --}}
       </div>
 
       {{-- <!-- SidebarSearch Form -->
@@ -292,8 +292,18 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="/datapengaduan" class="nav-link">
+              <i class="nav-icon fas fa-comments"></i>
+              <p>
+                Data Pengaduan
+                
+              </p>
+            </a>
+          </li> --}}
+
+          <li class="nav-item">
+            <a href="/pengaduanusers" class="nav-link">
               <i class="nav-icon fas fa-comments"></i>
               <p>
                 Data Pengaduan

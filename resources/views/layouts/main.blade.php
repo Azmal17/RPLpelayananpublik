@@ -27,7 +27,7 @@
                     <a class="nav-link " href="/alur">Alur Layanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/pengaduanuser">Pengaduan</a>
+                    <a class="nav-link " href="/pengaduanusers/create">Pengaduan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="{{ route('pendaftaran.create') }}">Pendaftaran</a>
